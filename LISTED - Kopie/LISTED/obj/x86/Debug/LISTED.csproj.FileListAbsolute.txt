@@ -1,7 +1,0 @@
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\Test_LISTED\Test_LISTED\obj\x86\Debug\Test_LISTED.GUI1.resources
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\Test_LISTED\Test_LISTED\obj\x86\Debug\LISTED.csproj.GenerateResource.Cache
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\Test_LISTED\Test_LISTED\bin\Debug\LISTED.exe
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\Test_LISTED\Test_LISTED\bin\Debug\LISTED.pdb
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\Test_LISTED\Test_LISTED\obj\x86\Debug\LISTED.Properties.Resources.resources
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\Test_LISTED\Test_LISTED\obj\x86\Debug\LISTED.exe
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\Test_LISTED\Test_LISTED\obj\x86\Debug\LISTED.pdb

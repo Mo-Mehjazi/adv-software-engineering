@@ -1,7 +1,0 @@
-C:\Users\mfle\documents\visual studio 2010\Projects\Test_LISTED\Test_LISTED\bin\Release\Test_LISTED.exe
-C:\Users\mfle\documents\visual studio 2010\Projects\Test_LISTED\Test_LISTED\bin\Release\Test_LISTED.pdb
-C:\Users\mfle\documents\visual studio 2010\Projects\Test_LISTED\Test_LISTED\obj\x86\Release\Test_LISTED.Form1.resources
-C:\Users\mfle\documents\visual studio 2010\Projects\Test_LISTED\Test_LISTED\obj\x86\Release\Test_LISTED.Properties.Resources.resources
-C:\Users\mfle\documents\visual studio 2010\Projects\Test_LISTED\Test_LISTED\obj\x86\Release\Test_LISTED.csproj.GenerateResource.Cache
-C:\Users\mfle\documents\visual studio 2010\Projects\Test_LISTED\Test_LISTED\obj\x86\Release\Test_LISTED.exe
-C:\Users\mfle\documents\visual studio 2010\Projects\Test_LISTED\Test_LISTED\obj\x86\Release\Test_LISTED.pdb
