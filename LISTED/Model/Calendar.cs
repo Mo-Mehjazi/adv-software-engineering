@@ -8,4 +8,9 @@ namespace Test_LISTED.Model
     class Calendar
     {
     }
+
+    class DateReminder
+    {
+
+    }
 }

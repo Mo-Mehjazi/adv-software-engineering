@@ -7,5 +7,7 @@ namespace Test_LISTED.Presentation_Model
 {
     class TabControl
     {
+        TabControl(){}
+        
     }
 }
