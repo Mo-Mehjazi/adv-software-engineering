@@ -2,38 +2,48 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Test_LISTED.Model
 {
-    class UserLogin
+    public class Movie
     {
-        private string s_UserLogin = "Model\\UserLogin.txt";
+        public string Name { get; set; }
+        public int Year { get; set; }
+    }
 
-        /* set new user login */
-        UserLogin(){}
+    public class UserLogin
+    {
+        public string s_UserLogin = "Model\\UserLogin.txt";
 
-        /* get user from list */
+        public UserLogin()
+        {
+            /* set new user login */
+            
+        }
+        
+        [JsonPropertyName("userId")]
+        public string s_UserId { get; set; } /* set user to json file */
+
         public void GetUserById()
         {
-            /**/
+            /* get user from list */
         }
 
-        /* delete user from list */
         public void DeleteUserById()
         {
-            /**/
+            /* delete user from list */
         }
 
-        /* change user data from list */
         public void ChangeUserDataById()
         {
-            /**/
+            /* change user data from list */
         }
 
-        /* set active user */
         public void SetUserActiveById()
         {
-            /**/
+            /* set active user */
         }
     }
 }

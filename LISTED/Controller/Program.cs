@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Security;
 using System.Windows.Forms;
+using Test_LISTED.Model;
 
 namespace Test_LISTED
 {
@@ -27,9 +29,9 @@ namespace Test_LISTED
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GUI1());
-            
-            Testing test = new Testing();
-            test.variableTest = test.TestForTesting(1, 2, 0);
+
+            //Testing test = new Testing();
+            //test.variableTest = test.TestForTesting(1, 2, 0);
         }
     }
 

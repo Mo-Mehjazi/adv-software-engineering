@@ -7,9 +7,11 @@ C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\bin\Debug\netcore
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csprojAssemblyReference.cache
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\Test_LISTED.GUI1.resources
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csproj.GenerateResource.cache
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csproj.CoreCompileInputs.cache
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.AssemblyInfoInputs.cache
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.AssemblyInfo.cs
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.dll
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.pdb
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.genruntimeconfig.cache
+C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csproj.CoreCompileInputs.cache
+C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csproj.CopyComplete
