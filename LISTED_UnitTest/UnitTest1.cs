@@ -2,7 +2,6 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Test_LISTED;
 
-
 namespace LISTED_UnitTest
 {
     [TestClass]

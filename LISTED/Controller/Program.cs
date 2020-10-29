@@ -30,8 +30,8 @@ namespace Test_LISTED
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GUI1());
 
-            //Testing test = new Testing();
-            //test.variableTest = test.TestForTesting(1, 2, 0);
+            Testing test = new Testing();
+            test.variableTest = test.TestForTesting(1, 2, 0);
         }
     }
 
