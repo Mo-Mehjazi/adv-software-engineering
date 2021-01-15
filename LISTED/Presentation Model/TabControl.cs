@@ -13,23 +13,23 @@ namespace Test_LISTED.Presentation_Model
      * Input:  Manage tab order.
      * Output: Index and internally ordered tab array.
      */
-    class TabControl
+    public class TabControl
     {
-        private int[][] array_TabList = new int[2][10]; /* Class-internal 2D array of integer, contains 2 items per tab and up to 10 tabs */
+        public int[,] array_TabList = new int[2,10]; /* Class-internal 2D array of integer, contains 2 items per tab and up to 10 tabs */
 
         /*
          * Create the instance of the tab control.
          *
          * Input:  Nothing.
-         * Output: Instance of TabControl, contains methods.
+         * Output: Instance of TabControl, contains methods and empty array_TabList.
          */
-        TabControl()
+        public TabControl()
         {
             /* Init constructor. */
         }
 
         /*
-         * Receive tab GUI element information.
+         * Receive tab GUI element button number information.
          *
          * The method is a public interface.
          *
@@ -116,7 +116,7 @@ namespace Test_LISTED.Presentation_Model
      * Input:  Button as reference for tab in GUI.
      * Output: Tab-Struct with all important information.
      */
-    class Tab
+    public class Tab
     {
         /*
          * Create the struct with the necessary information.
@@ -126,7 +126,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Button GUI element indicates tab.
          * Output: Information is in struct, shall be in array list.
          */
-        Tab(Button button_ForTab)
+        public Tab(Button button_ForTab)
         {
             /*  */
         }
