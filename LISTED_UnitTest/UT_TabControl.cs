@@ -5,15 +5,11 @@ using Test_LISTED;
 namespace LISTED_UnitTest
 {
     [TestClass]
-    public class UT_TabControl
+    public class UnitTest1
     {
         [TestMethod]
-        public void UT_TabControl()
+        public void TestMethod1()
         {
-            //TODO
-
-
-/*
             // arrange
             int vara = 1;
             int varb = 2;
@@ -25,7 +21,6 @@ namespace LISTED_UnitTest
 
             // assert
             Assert.AreEqual(3, test.variableTest, "Passed");
-*/
 
         }
     }
