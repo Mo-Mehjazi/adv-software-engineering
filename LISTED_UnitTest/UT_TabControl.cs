@@ -15,10 +15,10 @@ namespace LISTED_UnitTest
             // arrange
             TabControl myTabControl = new TabControl(); /* Create instance for tab control. */
             int[,] myArrayTabList = new int[2, 10]; /* Create instance for tab array. */
-            Tab myTabStruct = new Tab(String "1"); /* Button returns button number. */
+            //Tab myTabStruct = new Tab("1"); /* Button returns button number. */
 
             // act
-            myTabControl.v_TabControl_ManageTab(myTabStruct); /* call test method */
+            //myTabControl.v_TabControl_ManageTab(); /* call test method */
 
             // assert
 
