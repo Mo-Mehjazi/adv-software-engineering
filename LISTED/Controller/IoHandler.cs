@@ -6,7 +6,7 @@ using System.Text;
 namespace Test_LISTED.Controller
 {
     /*
-     * Verify user input data.
+     * Verify user input data and merge info to format of database.
      *
      * Input:  Input data from user.
      * Output: Verification if data is okay or not.
@@ -54,13 +54,45 @@ namespace Test_LISTED.Controller
     }
 
     /*
-     * Brief.
+     * Verify output from database and split from database format to GUI elements format.
      *
-     * Input:
-     * Output: 
+     * Input:  Data stream from database.
+     * Output: Interpreted data stream, split into GUI elements.
      */
     public class OutputHandler
     {
-        /**/
+        /*
+         * Constructor.
+         */
+        public OutputHandler()
+        {
+            /**/
+        }
+
+        /*
+         * Receive data stream from database.
+         *
+         * The method is public.
+         *
+         * Input:  Data stream with content from database.
+         * Output: Data split into target format.
+         */
+        public void v_OutputHandler_ReceiveDataStream(String string_Content)
+        {
+            /**/
+            return;
+        }
+
+        /*
+         * Split the data stream.
+         *
+         * Input:  Data stream from database.
+         * Output: Content is split on target formats of the GUI.
+         */
+        public void v_OutputHandler_SplitDataStream(String string_Content)
+        {
+            /**/
+            return;
+        }
     }
 }

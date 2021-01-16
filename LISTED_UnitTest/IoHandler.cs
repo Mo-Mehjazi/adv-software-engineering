@@ -40,4 +40,33 @@ namespace LISTED_UnitTest
             Assert.AreNotEqual(0, int_MyResult1, "Error, user input shall not be in database.");
         }
     }
+
+    [TestClass]
+    public class UT_OutputHandler
+    {
+        [TestMethod]
+        public void UT_v_OutputHandler_ReceiveDataStream()
+        {
+            // arrange
+            String myString = "";
+            String myTarget1, myTarget2, myTarget3 = "";
+            OutputHandler myOutputHandler = new OutputHandler();
+
+            // act
+            myOutputHandler.v_OutputHandler_ReceiveDataStream(myString);
+
+            // assert
+        }
+
+        [TestMethod]
+        public void UT_v_OutputHandler_SplitDataStream()
+        {
+            // arrange
+            String myString = "";
+
+
+            // act
+            // assert
+        }
+    }
 }
