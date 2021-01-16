@@ -15,7 +15,7 @@ namespace Test_LISTED.Presentation_Model
      */
     public class TabControl
     {
-        public int[,] array_TabList = new int[2,10]; /* Class-internal 2D array of integer, contains 2 items per tab and up to 10 tabs */
+        public String[,] array_TabList = new String[3,10]; /* Class-internal 2D array of integer, contains 2 items per tab and up to 10 tabs */
 
         /*
          * Create the instance of the tab control.
@@ -47,7 +47,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference.
          * Output: Shall return the index of the tab in tab array.
          */
-        private int i_TabControl_ReturnTabIndex(Tab struct_ForTab)
+        public int i_TabControl_ReturnTabIndex(Tab struct_ForTab)
         {
             return 0;
         }
@@ -58,7 +58,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference, new index that the user wishes.
          * Output: Tab index is changed, old index is deleted and tab array is restructured.
          */
-        private int i_TabControl_SetTabToTabArray(Tab struct_ForTab, int int_TabIndexNew, int int_TabIndexOld)
+        public int i_TabControl_SetTabToTabArray(Tab struct_ForTab, int int_TabIndexNew, int int_TabIndexOld)
         {
             return int_TabIndexNew;
         }
@@ -69,7 +69,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab index.
          * Output: Tab index shall be deleted from tab array and tab array shall remain ordered without empty indices.
          */
-        private void v_TabControl_DeleteTabFromArray(int int_TabIndex)
+        public void v_TabControl_DeleteTabFromArray(int int_TabIndex)
         {
             return;
         }
@@ -80,7 +80,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference to new tab.
          * Output: Tab index shall be inserted into tab array, tab array shall remain ordered by increasing numbers.
          */
-        private void v_TabControl_ManageArrayOrder(Tab struct_ForTab)
+        public void v_TabControl_ManageArrayOrder(Tab struct_ForTab)
         {
             return;
         }
@@ -91,7 +91,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab index.
          * Output: Tab index shall be inserted into tab array, tab array shall remain ordered by increasing numbers.
          */
-        private void v_TabControl_ManageArrayOrder(int int_TabIndex)
+        public void v_TabControl_ManageArrayOrder(int int_TabIndex)
         {
             return;
         }
@@ -102,7 +102,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference to new tab.
          * Output: Create Index for tab and shall be in tab array.
          */
-        private void v_TabControl_CreateNewTab(Tab struct_ForTab)
+        public void v_TabControl_CreateNewTab(Tab struct_ForTab)
         {
             return;
         }
@@ -128,7 +128,10 @@ namespace Test_LISTED.Presentation_Model
          */
         public Tab(Button button_ForTab)
         {
-            /*  */
-        }
+            public int int_ArrayTabFieldNumber = 0; /* 0 = not in tab array yet, != 0 order in tab array */
+            public int int_ButtonVisble = 1; /* 1 = visible, 0 = unvisible */
+            public String string_ListParametersInStorage = ""; /* Path to storage of list parameters */
+            public int int_ButtonReference = 0; /* TODO: Button Reference from given button element */
+    }
     }
 }
