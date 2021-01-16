@@ -31,7 +31,7 @@ namespace Test_LISTED.Presentation_Model
         /*
          * Receive tab GUI element button number information.
          *
-         * The method is a public interface.
+         * The method is public.
          *
          * Input:  Tab-Struct as reference.
          * Output: Call method according to information in Tab-Struct. (e.g. if no index then create  new index; if index then restructure element; delete is given by tag in tab-struct)
@@ -128,10 +128,10 @@ namespace Test_LISTED.Presentation_Model
          */
         public Tab(Button button_ForTab)
         {
-            public int int_ArrayTabFieldNumber = 0; /* 0 = not in tab array yet, != 0 order in tab array */
-            public int int_ButtonVisble = 1; /* 1 = visible, 0 = unvisible */
-            public String string_ListParametersInStorage = ""; /* Path to storage of list parameters */
-            public int int_ButtonReference = 0; /* TODO: Button Reference from given button element */
-    }
+            int int_ArrayTabFieldNumber = 0; /* 0 = not in tab array yet, != 0 order in tab array */
+            int int_ButtonVisble = 1; /* 1 = visible, 0 = unvisible */
+            String string_ListParametersInStorage = ""; /* Path to storage of list parameters */
+            int int_ButtonReference = 0; /* TODO: Button Reference from given button element */
+        }
     }
 }
