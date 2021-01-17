@@ -8,6 +8,41 @@ namespace Test_LISTED.Model
 {
     class IoDatastorage
     {
+        /*
+         * Constructor
+         */
+        public IoDatastorage()
+        {
+            /**/
+        }
+
+        /*
+         * Write data to the storage.
+         *
+         * The method is public.
+         *
+         * Input:  Data to be written into the storage, file where to be written to.
+         * Output: 1 if data was written successfully; 0 if data was not written successfully.
+         */
+        public int int_IoDatastorage_WriteDataToStorage(String string_Data, String string_Path)
+        {
+            /**/
+            return 0;
+        }
+
+        /*
+         * Read data to the storage.
+         *
+         * The method is public.
+         *
+         * Input:  File to be read from, file where to be read from.
+         * Output: Data stream that was read from the file as string.
+         */
+        public String string_IoDataStorage_ReadDataFromStorage(String string_Path)
+        {
+            /**/
+            return "";
+        }
     }
 
     
