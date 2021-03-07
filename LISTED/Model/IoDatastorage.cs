@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
+using System.IO;
+using System.Diagnostics;
 
 namespace Test_LISTED.Model
 {
     class IoDatastorage
     {
+        string string_Data = "";
+
         /*
          * Constructor
          */
@@ -24,9 +28,10 @@ namespace Test_LISTED.Model
          * Input:  Data to be written into the storage, file where to be written to.
          * Output: 1 if data was written successfully; 0 if data was not written successfully.
          */
-        public int int_IoDatastorage_WriteDataToStorage(String string_Data, String string_Path)
+        public int int_IoDatastorage_WriteDataToStorage(string string_Data, string string_Path)
         {
-            /**/
+            /* Write given string_Data into file at string_Path. */
+            File.WriteAllText(string_Path, string_Data);
             return 0;
         }
 
@@ -38,10 +43,13 @@ namespace Test_LISTED.Model
          * Input:  File to be read from, file where to be read from.
          * Output: Data stream that was read from the file as string.
          */
-        public String string_IoDataStorage_ReadDataFromStorage(String string_Path)
+        public string string_IoDataStorage_ReadDataFromStorage(string string_Path)
         {
             /**/
-            return "";
+            string_Data = File.ReadAllText(string_Path);
+            Debug.WriteLine("Output Path: " + string_Path);
+            Debug.WriteLine("Output Data: " + string_Data);
+            return string_Data;
         }
     }
 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Security;
 using System.Windows.Forms;
 using Test_LISTED.Model;
+using Test_LISTED.Controller;
 
 namespace Test_LISTED
 {
@@ -26,12 +27,18 @@ namespace Test_LISTED
         [STAThread]
         static void Main()
         {
+            /* Instance of InputHandler to write into files. */
+            InputHandler myInputHandler = new InputHandler();
+            myInputHandler.int_InputHandler_VerifyUserInput("");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GUI1());
 
             Testing test = new Testing();
             test.variableTest = test.TestForTesting(1, 2, 0);
+
+            
         }
     }
 
