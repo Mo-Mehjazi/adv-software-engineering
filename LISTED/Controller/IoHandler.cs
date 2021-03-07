@@ -15,6 +15,7 @@ namespace Test_LISTED.Controller
     public class InputHandler
     {
         IoDatastorage mydatastorage;
+        
 
         /*
          * Constructor.
@@ -26,6 +27,8 @@ namespace Test_LISTED.Controller
         {
             /* create IO datastorage*/
             mydatastorage = new IoDatastorage();
+
+
         }
 
         /*
@@ -111,12 +114,17 @@ namespace Test_LISTED.Controller
      */
     public class OutputHandler
     {
+        OutputHandler myOutputHandler;
+        IoDatastorage myIoDatastorage;
+
         /*
          * Constructor.
          */
         public OutputHandler()
         {
             /**/
+            /* Instance of OutputHandler to read from files. */
+            myIoDatastorage = new IoDatastorage();
         }
 
         /*
@@ -129,7 +137,9 @@ namespace Test_LISTED.Controller
          */
         public void v_OutputHandler_ReceiveDataStream(String string_Content)
         {
-            /**/
+            /* Read from datastorage */
+            string myTest = myIoDatastorage.string_IoDataStorage_ReadDataFromStorage("C:\\Users\\mfle\\Desktop\\myFile.txt");
+            System.Diagnostics.Debug.WriteLine("Ersatz: " + myTest);
             return;
         }
 
