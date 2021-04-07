@@ -11,9 +11,9 @@ using Test_LISTED.Model;
 
 namespace Test_LISTED
 {
-    public partial class GUI1 : Form
+    public partial class Gui1 : Form
     {
-        public GUI1()
+        public Gui1()
         {
             InitializeComponent();
         }
@@ -40,6 +40,11 @@ namespace Test_LISTED
         private void button1_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "Hallo";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

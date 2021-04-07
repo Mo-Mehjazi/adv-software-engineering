@@ -28,7 +28,7 @@ namespace Test_LISTED
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI1());
+            Application.Run(new Gui1());
 
             Testing test = new Testing();
             test.variableTest = test.TestForTesting(1, 2, 0);
