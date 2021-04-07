@@ -52,19 +52,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\M7_Mj\\.nuget\\packages\\": {}
+    "C:\\Users\\mfle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\M7_Mj\\Source\\Repos\\Mo-Mehjazi\\adv-software-engineering\\LISTED\\LISTED.csproj",
+      "projectUniqueName": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj",
       "projectName": "LISTED",
-      "projectPath": "C:\\Users\\M7_Mj\\Source\\Repos\\Mo-Mehjazi\\adv-software-engineering\\LISTED\\LISTED.csproj",
-      "packagesPath": "C:\\Users\\M7_Mj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\M7_Mj\\Source\\Repos\\Mo-Mehjazi\\adv-software-engineering\\LISTED\\obj\\",
+      "projectPath": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj",
+      "packagesPath": "C:\\Users\\mfle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\M7_Mj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mfle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -76,7 +76,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -88,7 +87,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Newtonsoft.Json": {
             "target": "Package",
@@ -113,7 +111,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
