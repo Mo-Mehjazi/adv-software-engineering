@@ -1,0 +1,6 @@
+target/
+*.cs
+*.sln
+*.csproj
+*.resx
+*.txt
