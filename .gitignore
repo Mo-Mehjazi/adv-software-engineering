@@ -1,0 +1,8 @@
+
+*.cache
+LISTED/obj/Debug/netcoreapp3.1/LISTED.assets.cache
+LISTED/.vs/LISTED/v16/.suo
+LISTED/obj/LISTED.csproj.nuget.dgspec.json
+LISTED/obj/LISTED.csproj.nuget.g.props
+*.cache
+LISTED/.vs/LISTED/v16/.suo
