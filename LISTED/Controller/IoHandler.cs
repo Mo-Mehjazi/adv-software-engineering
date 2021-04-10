@@ -138,7 +138,7 @@ namespace Test_LISTED.Controller
         public void v_OutputHandler_ReceiveDataStream(String string_Content)
         {
             /* Read from datastorage */
-            string myTest = myIoDatastorage.string_IoDataStorage_ReadDataFromStorage("C:\\Users\\mfle\\Desktop\\myFile.txt");
+            string myTest = myIoDatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile); //"C:\\Users\\mfle\\Desktop\\myFile.txt");
             System.Diagnostics.Debug.WriteLine("Ersatz: " + myTest);
             return;
         }

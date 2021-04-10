@@ -46,8 +46,8 @@ namespace Test_LISTED.Model
         public string string_IoDataStorage_ReadDataFromStorage(string string_Path)
         {
             /**/
-            string_Data = File.ReadAllText(string_Path);
-            Debug.WriteLine("Output Path: " + string_Path);
+            string_Data = File.ReadAllText(Storage.s_PathTextfile); // string_Path);
+            Debug.WriteLine("Output Path: " + Storage.s_PathTextfile); // string_Path);
             Debug.WriteLine("Output Data: " + string_Data);
             return string_Data;
         }
@@ -56,7 +56,7 @@ namespace Test_LISTED.Model
     class Storage
     {
         /* storage paths */
-        public static string s_PathTextfile = "Model\\DataStorage.txt";
+        public static string s_PathTextfile = "..\\..\\..\\Model\\DataStorage.txt";
         public static string s_PathExcelfile;
         public static string s_PathDatabase;
         private static int[] ai_TabsList = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };

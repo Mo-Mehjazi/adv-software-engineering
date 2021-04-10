@@ -40,7 +40,9 @@ namespace Test_LISTED
 
         private void button1_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = "Hallo";
+            IoDatastorage myModel = new IoDatastorage();
+            richTextBox1.Text = myModel.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
+            //richTextBox1.Text = "Hallo";
         }
 
         private void button2_Click(object sender, EventArgs e)
