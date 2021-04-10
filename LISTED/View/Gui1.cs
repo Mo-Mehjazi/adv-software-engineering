@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Test_LISTED.Model;
+using Test_LISTED.View;
 
 namespace Test_LISTED
 {
@@ -44,7 +45,8 @@ namespace Test_LISTED
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form mySubForm = new Gui2();
+            mySubForm.ShowDialog();
         }
     }
 }

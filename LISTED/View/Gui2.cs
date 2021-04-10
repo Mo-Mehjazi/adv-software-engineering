@@ -40,5 +40,10 @@ namespace Test_LISTED.View
         {
 
         }
+
+        private void btnAbbrechen_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
