@@ -9,14 +9,28 @@ using System.Text;
 using System.Windows.Forms;
 using Test_LISTED.Model;
 using Test_LISTED.View;
+using System.Runtime.InteropServices;
 
 namespace Test_LISTED
 {
     public partial class Gui1 : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn
+    (
+      int nLeftRect,
+      int nTopRect,
+      int nRightRect,
+      int nBottomRect,
+      int nWidthEllipse,
+         int nHeightEllipse
+
+  );
         public Gui1()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -57,6 +71,27 @@ namespace Test_LISTED
             tabNew.Text = "New List";
             tabNew.ImageIndex = this.tabControl1.TabPages.Count + 1;
             this.tabControl1.TabPages.Add(tabNew);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void Gui1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
