@@ -53,8 +53,6 @@ namespace Test_LISTED.Model
         }
     }
 
-    
-
     class Storage
     {
         /* storage paths */

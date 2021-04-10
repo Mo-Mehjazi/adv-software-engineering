@@ -83,10 +83,10 @@ namespace Test_LISTED.Controller
             }
 
             /* Write into data storage */
-            mydatastorage.int_IoDatastorage_WriteDataToStorage(myStringTest, "C:\\Users\\mfle\\Desktop\\myFile.txt");
+            mydatastorage.int_IoDatastorage_WriteDataToStorage(myStringTest, Storage.s_PathTextfile); // "C:\\Users\\mfle\\Desktop\\myFile.txt");
 
             /* TEST, temp: Read from written data storage. */
-            string myTest = mydatastorage.string_IoDataStorage_ReadDataFromStorage("C:\\Users\\mfle\\Desktop\\myFile.txt");
+            string myTest = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
             System.Diagnostics.Debug.WriteLine(myTest);
 
             return 0;

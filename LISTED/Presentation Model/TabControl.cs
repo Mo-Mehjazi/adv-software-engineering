@@ -36,7 +36,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference.
          * Output: Call method according to information in Tab-Struct. (e.g. if no index then create  new index; if index then restructure element; delete is given by tag in tab-struct)
          */
-        public void v_TabControl_ManageTab(Tab struct_ForTab)
+        public void v_TabControl_ManageTab(TabControl struct_ForTab)
         {
             return;
         }
@@ -47,7 +47,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference.
          * Output: Shall return the index of the tab in tab array.
          */
-        public int i_TabControl_ReturnTabIndex(Tab struct_ForTab)
+        public int i_TabControl_ReturnTabIndex(TabControl struct_ForTab)
         {
             return 0;
         }
@@ -58,7 +58,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference, new index that the user wishes.
          * Output: Tab index is changed, old index is deleted and tab array is restructured.
          */
-        public int i_TabControl_SetTabToTabArray(Tab struct_ForTab, int int_TabIndexNew, int int_TabIndexOld)
+        public int i_TabControl_SetTabToTabArray(TabControl struct_ForTab, int int_TabIndexNew, int int_TabIndexOld)
         {
             return int_TabIndexNew;
         }
@@ -80,7 +80,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference to new tab.
          * Output: Tab index shall be inserted into tab array, tab array shall remain ordered by increasing numbers.
          */
-        public void v_TabControl_ManageArrayOrder(Tab struct_ForTab)
+        public void v_TabControl_ManageArrayOrder(TabControl struct_ForTab)
         {
             return;
         }
@@ -102,7 +102,7 @@ namespace Test_LISTED.Presentation_Model
          * Input:  Tab-Struct as reference to new tab.
          * Output: Create Index for tab and shall be in tab array.
          */
-        public void v_TabControl_CreateNewTab(Tab struct_ForTab)
+        public void v_TabControl_CreateNewTab(TabControl struct_ForTab)
         {
             return;
         }
