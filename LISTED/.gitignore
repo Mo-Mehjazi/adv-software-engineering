@@ -4,3 +4,7 @@ target/
 *.csproj
 *.resx
 *.txt
+
+!*.cachefile
+!*.cache
+!*.suo
