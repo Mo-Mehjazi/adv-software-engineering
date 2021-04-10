@@ -45,12 +45,24 @@
             this.userLable = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
+            this.lblHome = new System.Windows.Forms.Label();
+            this.btnX = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblEvents = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -65,7 +77,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(963, 446);
+            this.button1.Location = new System.Drawing.Point(879, 457);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 29);
@@ -76,7 +88,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(963, 380);
+            this.button2.Location = new System.Drawing.Point(879, 377);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 44);
             this.button2.TabIndex = 2;
@@ -87,10 +99,10 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(268, 184);
+            this.tabControl1.Location = new System.Drawing.Point(244, 388);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(593, 388);
+            this.tabControl1.Size = new System.Drawing.Size(535, 220);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -100,13 +112,13 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(585, 360);
+            this.tabPage1.Size = new System.Drawing.Size(527, 192);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(963, 315);
+            this.button3.Location = new System.Drawing.Point(879, 315);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(89, 44);
             this.button3.TabIndex = 4;
@@ -127,7 +139,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(186, 666);
+            this.panelLeft.Size = new System.Drawing.Size(186, 665);
             this.panelLeft.TabIndex = 5;
             // 
             // pnlNav
@@ -140,6 +152,7 @@
             // 
             // btnCal
             // 
+            this.btnCal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.btnCal.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCal.FlatAppearance.BorderSize = 0;
             this.btnCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -152,10 +165,13 @@
             this.btnCal.TabIndex = 1;
             this.btnCal.Text = "Calendar";
             this.btnCal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCal.UseVisualStyleBackColor = true;
+            this.btnCal.UseVisualStyleBackColor = false;
+            this.btnCal.Click += new System.EventHandler(this.btnCal_Click);
+            this.btnCal.Leave += new System.EventHandler(this.btnCal_Leave);
             // 
             // btnAlarm
             // 
+            this.btnAlarm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.btnAlarm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAlarm.FlatAppearance.BorderSize = 0;
             this.btnAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -169,10 +185,13 @@
             this.btnAlarm.TabIndex = 1;
             this.btnAlarm.Text = "Alarm Clock";
             this.btnAlarm.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAlarm.UseVisualStyleBackColor = true;
+            this.btnAlarm.UseVisualStyleBackColor = false;
+            this.btnAlarm.Click += new System.EventHandler(this.btnAlarm_Click);
+            this.btnAlarm.Leave += new System.EventHandler(this.btnAlarm_Leave);
             // 
             // btnTodo
             // 
+            this.btnTodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.btnTodo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTodo.FlatAppearance.BorderSize = 0;
             this.btnTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -185,26 +204,32 @@
             this.btnTodo.TabIndex = 1;
             this.btnTodo.Text = "To Do!";
             this.btnTodo.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnTodo.UseVisualStyleBackColor = true;
+            this.btnTodo.UseVisualStyleBackColor = false;
+            this.btnTodo.Click += new System.EventHandler(this.btnTodo_Click);
+            this.btnTodo.Leave += new System.EventHandler(this.btnTodo_Leave);
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.ForeColor = System.Drawing.Color.Green;
             this.btnLogOut.Image = global::LISTED.Properties.Resources.logout;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 606);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 605);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(186, 60);
             this.btnLogOut.TabIndex = 1;
             this.btnLogOut.Text = "Log out!";
             this.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            this.btnLogOut.Leave += new System.EventHandler(this.btnLogOut_Leave);
             // 
             // btnHome
             // 
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -217,8 +242,9 @@
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Home";
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnHome.Leave += new System.EventHandler(this.btnHome_Leave);
             // 
             // panel1
             // 
@@ -254,20 +280,113 @@
             // logo
             // 
             this.logo.Image = global::LISTED.Properties.Resources.apple_touch_icon;
-            this.logo.Location = new System.Drawing.Point(897, 2);
+            this.logo.Location = new System.Drawing.Point(807, 12);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(180, 100);
+            this.logo.Size = new System.Drawing.Size(152, 100);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
             this.logo.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // lblHome
+            // 
+            this.lblHome.AutoSize = true;
+            this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblHome.Location = new System.Drawing.Point(215, 63);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(114, 39);
+            this.lblHome.TabIndex = 6;
+            this.lblHome.Text = "Home";
+            // 
+            // btnX
+            // 
+            this.btnX.FlatAppearance.BorderSize = 0;
+            this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnX.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnX.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnX.Location = new System.Drawing.Point(943, 12);
+            this.btnX.Name = "btnX";
+            this.btnX.Size = new System.Drawing.Size(25, 25);
+            this.btnX.TabIndex = 7;
+            this.btnX.Text = "X";
+            this.btnX.UseVisualStyleBackColor = true;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.lblEvents);
+            this.panel2.Location = new System.Drawing.Point(215, 190);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(264, 148);
+            this.panel2.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::LISTED.Properties.Resources.Upevent;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblEvents
+            // 
+            this.lblEvents.AutoSize = true;
+            this.lblEvents.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEvents.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblEvents.Location = new System.Drawing.Point(54, 19);
+            this.lblEvents.Name = "lblEvents";
+            this.lblEvents.Size = new System.Drawing.Size(173, 25);
+            this.lblEvents.TabIndex = 0;
+            this.lblEvents.Text = "Upcoming Events!";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(521, 190);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(264, 148);
+            this.panel3.TabIndex = 8;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = global::LISTED.Properties.Resources.Highlights;
+            this.pictureBox3.Location = new System.Drawing.Point(16, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(54, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(154, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Tasks Highlights";
             // 
             // Gui1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(1076, 666);
+            this.ClientSize = new System.Drawing.Size(978, 665);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnX);
+            this.Controls.Add(this.lblHome);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.button3);
@@ -279,6 +398,7 @@
             this.Name = "Gui1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LISTED";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Gui1_FormClosing_1);
             this.Load += new System.EventHandler(this.Gui1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -287,7 +407,14 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -310,6 +437,14 @@
         private System.Windows.Forms.Button btnTodo;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Panel pnlNav;
+        private System.Windows.Forms.Label lblHome;
+        private System.Windows.Forms.Button btnX;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblEvents;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
     }
 }
 
