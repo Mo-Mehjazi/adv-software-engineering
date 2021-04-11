@@ -54,6 +54,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -68,7 +72,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(22, 59);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 22);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(344, 20);
@@ -110,6 +114,10 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPage1.Controls.Add(this.btnEntry);
+            this.tabPage1.Controls.Add(this.richTextBox5);
+            this.tabPage1.Controls.Add(this.richTextBox4);
+            this.tabPage1.Controls.Add(this.richTextBox3);
+            this.tabPage1.Controls.Add(this.richTextBox2);
             this.tabPage1.Controls.Add(this.richTextBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
@@ -124,7 +132,7 @@
             this.btnEntry.Name = "btnEntry";
             this.btnEntry.Size = new System.Drawing.Size(75, 42);
             this.btnEntry.TabIndex = 1;
-            this.btnEntry.Text = "Add new Entry";
+            this.btnEntry.Text = "Call Database";
             this.btnEntry.UseVisualStyleBackColor = true;
             this.btnEntry.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -380,6 +388,46 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tasks Highlights";
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(12, 55);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(344, 20);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = "";
+            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(12, 88);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(344, 20);
+            this.richTextBox3.TabIndex = 0;
+            this.richTextBox3.Text = "";
+            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Location = new System.Drawing.Point(12, 121);
+            this.richTextBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(344, 20);
+            this.richTextBox4.TabIndex = 0;
+            this.richTextBox4.Text = "";
+            this.richTextBox4.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Location = new System.Drawing.Point(12, 154);
+            this.richTextBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.Size = new System.Drawing.Size(344, 20);
+            this.richTextBox5.TabIndex = 0;
+            this.richTextBox5.Text = "";
+            this.richTextBox5.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
             // Gui1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -449,6 +497,10 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEntry;
+        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 

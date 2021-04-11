@@ -11,6 +11,7 @@ using Test_LISTED.Model;
 using Test_LISTED.View;
 using System.Runtime.InteropServices;
 using Test_LISTED.Controller;
+using System.IO;
 
 namespace Test_LISTED
 {
@@ -219,6 +220,56 @@ namespace Test_LISTED
             //this.richTextBox1.Text = "Hallo";
             //textBoxNew.Text = "Das hier ist ein neuer Textttttttttttttttttttttttttttttttttttttttttt.";
 
+            /* add content from database */
+            IoDatastorage mydatastorage = new IoDatastorage();
+            string myTest = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
+
+            string s_list = "list";
+            string s_list2 = "list 2";
+
+
+            foreach (string line in myTest.Split("\n"))
+            {
+                //int charLocation = item.IndexOf("s_list", StringComparison.Ordinal);
+                //if(charLocation > 0)
+                //{
+                //    this.richTextBox1.Text = item.Substring(0, charLocation);
+                //}
+                {
+
+                    if (line.StartsWith("list"))
+                    {
+                        this.richTextBox1.Text = line.Substring(5, 1);
+
+                        if (line.Substring(5, 1).Equals("1", StringComparison.Ordinal))
+                        {
+                            int charLocation = 0;
+                            charLocation = line.IndexOf(",");
+                            this.richTextBox1.Text = charLocation.ToString();
+                            this.richTextBox1.Text = line.Substring(7, charLocation-7).Substring(1);
+                                
+                            int charLocationNew = line.IndexOf(",", charLocation + 1);
+                            if(charLocationNew > 0)
+                            {
+                                this.richTextBox2.Text = line.Substring(charLocationNew).Substring(1);
+                                return;
+                            }
+                            else
+                            {
+                                this.richTextBox2.Text = line.Substring(charLocation).Substring(1);
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        this.richTextBox3.Text = "Nope";
+                    }
+
+                    
+            
+                }
+            }
         }
     }
 }

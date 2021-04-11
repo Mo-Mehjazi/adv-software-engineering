@@ -36,7 +36,7 @@ namespace Test_LISTED.Model
         }
 
         /*
-         * Read data to the storage.
+         * Read data from the storage.
          *
          * The method is public.
          *
