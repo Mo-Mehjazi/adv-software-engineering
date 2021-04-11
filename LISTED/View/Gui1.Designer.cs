@@ -33,6 +33,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnEntry = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
@@ -108,6 +109,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage1.Controls.Add(this.btnEntry);
             this.tabPage1.Controls.Add(this.richTextBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
@@ -115,6 +117,16 @@
             this.tabPage1.Size = new System.Drawing.Size(527, 192);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // btnEntry
+            // 
+            this.btnEntry.Location = new System.Drawing.Point(431, 120);
+            this.btnEntry.Name = "btnEntry";
+            this.btnEntry.Size = new System.Drawing.Size(75, 42);
+            this.btnEntry.TabIndex = 1;
+            this.btnEntry.Text = "Add new Entry";
+            this.btnEntry.UseVisualStyleBackColor = true;
+            this.btnEntry.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -158,7 +170,6 @@
             this.btnCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCal.ForeColor = System.Drawing.Color.Green;
-            this.btnCal.Image = global::LISTED.Properties.Resources.calendar;
             this.btnCal.Location = new System.Drawing.Point(0, 340);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(186, 50);
@@ -177,7 +188,6 @@
             this.btnAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlarm.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAlarm.ForeColor = System.Drawing.Color.Green;
-            this.btnAlarm.Image = global::LISTED.Properties.Resources.alarm_clock;
             this.btnAlarm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlarm.Location = new System.Drawing.Point(0, 290);
             this.btnAlarm.Name = "btnAlarm";
@@ -197,7 +207,6 @@
             this.btnTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTodo.ForeColor = System.Drawing.Color.Green;
-            this.btnTodo.Image = global::LISTED.Properties.Resources.clipboard;
             this.btnTodo.Location = new System.Drawing.Point(0, 240);
             this.btnTodo.Name = "btnTodo";
             this.btnTodo.Size = new System.Drawing.Size(186, 50);
@@ -216,7 +225,6 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.ForeColor = System.Drawing.Color.Green;
-            this.btnLogOut.Image = global::LISTED.Properties.Resources.logout;
             this.btnLogOut.Location = new System.Drawing.Point(0, 605);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(186, 60);
@@ -235,7 +243,6 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.Green;
-            this.btnHome.Image = global::LISTED.Properties.Resources.home;
             this.btnHome.Location = new System.Drawing.Point(0, 190);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(186, 50);
@@ -269,7 +276,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::LISTED.Properties.Resources.user;
             this.pictureBox2.Location = new System.Drawing.Point(54, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(75, 75);
@@ -279,7 +285,6 @@
             // 
             // logo
             // 
-            this.logo.Image = global::LISTED.Properties.Resources.apple_touch_icon;
             this.logo.Location = new System.Drawing.Point(807, 12);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(152, 100);
@@ -326,7 +331,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::LISTED.Properties.Resources.Upevent;
             this.pictureBox1.Location = new System.Drawing.Point(16, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
@@ -358,7 +362,6 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::LISTED.Properties.Resources.Highlights;
             this.pictureBox3.Location = new System.Drawing.Point(16, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
@@ -445,6 +448,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEntry;
     }
 }
 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Test_LISTED.Model;
 using Test_LISTED.View;
 using System.Runtime.InteropServices;
+using Test_LISTED.Controller;
 
 namespace Test_LISTED
 {
@@ -101,6 +102,10 @@ namespace Test_LISTED
             pnlNav.Left = btnHome.Left;
             btnHome.BackColor = Color.FromArgb(0, 64, 64);
 
+            InputHandler myInputHandler = new InputHandler();
+            myInputHandler.int_InputHandler_VerifyUserInput("");
+            this.richTextBox1.Text += myInputHandler.int_InputHandler_VerifyUserInput("");
+
         }
 
         private void btnTodo_Click(object sender, EventArgs e)
@@ -190,6 +195,30 @@ namespace Test_LISTED
             {
                 e.Cancel = true;
             }
+        }
+
+        int n = 0;
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //RichTextBox textBoxNew = new RichTextBox();
+            ////System.Drawing.Point myPoint = new System.Drawing.Point(22, 59);
+            //System.Drawing.Point myPoint = new System.Drawing.Point(this.richTextBox1.Location.X + 220, this.richTextBox1.Location.Y + 480);
+
+            //textBoxNew.Location = myPoint;
+            //textBoxNew.Margin = new System.Windows.Forms.Padding(2);
+            //textBoxNew.Size = new System.Drawing.Size(344, 20);
+            //textBoxNew.Text = "";
+            //textBoxNew.Name = "textBox_" + n.ToString();
+            //textBoxNew.TabIndex = this.richTextBox1.TabIndex + n;
+            //n++;
+
+            //this.tabPage1.Controls.Add(textBoxNew);
+            //this.Controls.Add(textBoxNew);
+
+            //this.richTextBox1.Text = "Hallo";
+            //textBoxNew.Text = "Das hier ist ein neuer Textttttttttttttttttttttttttttttttttttttttttt.";
+
         }
     }
 }

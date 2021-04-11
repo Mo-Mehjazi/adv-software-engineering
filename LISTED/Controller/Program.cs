@@ -28,11 +28,12 @@ namespace Test_LISTED
         static void Main()
         {
             /* Instance of InputHandler to write into files. */
+            
+            OutputHandler myOutputHandler = new OutputHandler();
+            myOutputHandler.v_OutputHandler_ReceiveDataStream("Das ist mein Input.");
             //InputHandler myInputHandler = new InputHandler();
             //myInputHandler.int_InputHandler_VerifyUserInput("");
-            OutputHandler myOutputHandler = new OutputHandler();
-            myOutputHandler.v_OutputHandler_ReceiveDataStream("");
-            
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

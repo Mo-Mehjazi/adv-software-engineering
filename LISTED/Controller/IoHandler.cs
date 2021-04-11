@@ -40,7 +40,7 @@ namespace Test_LISTED.Controller
          * Output: 1 if user input is valid, is not in database.
          *         0 if user input is not valid, is in database.
          */
-        public int int_InputHandler_VerifyUserInput(String string_UserInput)
+        public string int_InputHandler_VerifyUserInput(String string_UserInput)
         {
             // TODO: Variable input data to be written.
             /* create data to be written into local file */
@@ -89,7 +89,7 @@ namespace Test_LISTED.Controller
             string myTest = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
             System.Diagnostics.Debug.WriteLine(myTest);
 
-            return 0;
+            return myTest;
         }
 
         /*
@@ -139,6 +139,7 @@ namespace Test_LISTED.Controller
         {
             /* Read from datastorage */
             string myTest = myIoDatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile); //"C:\\Users\\mfle\\Desktop\\myFile.txt");
+            //string myTest = myIoDatastorage.int_IoDatastorage_WriteDataToStorage(string_Content, Storage.s_PathTextfile);
             System.Diagnostics.Debug.WriteLine("Ersatz: " + myTest);
             return;
         }
