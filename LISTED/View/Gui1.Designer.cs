@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gui1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnEntry = new System.Windows.Forms.Button();
             this.richTextBox10 = new System.Windows.Forms.RichTextBox();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.richTextBox9 = new System.Windows.Forms.RichTextBox();
@@ -43,6 +43,7 @@
             this.richTextBox7 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.btnEntry = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
@@ -58,13 +59,13 @@
             this.lblHome = new System.Windows.Forms.Label();
             this.btnX = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox12 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox11 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblEvents = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox11 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox12 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -83,14 +84,14 @@
             this.richTextBox1.Location = new System.Drawing.Point(12, 22);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(265, 20);
+            this.richTextBox1.Size = new System.Drawing.Size(337, 20);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(879, 457);
+            this.button1.Location = new System.Drawing.Point(807, 361);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 29);
@@ -101,7 +102,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(879, 377);
+            this.button2.Location = new System.Drawing.Point(877, 555);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 44);
             this.button2.TabIndex = 2;
@@ -121,7 +122,6 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage1.Controls.Add(this.btnEntry);
             this.tabPage1.Controls.Add(this.richTextBox10);
             this.tabPage1.Controls.Add(this.richTextBox5);
             this.tabPage1.Controls.Add(this.richTextBox9);
@@ -137,22 +137,12 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(527, 192);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            // 
-            // btnEntry
-            // 
-            this.btnEntry.Location = new System.Drawing.Point(431, 120);
-            this.btnEntry.Name = "btnEntry";
-            this.btnEntry.Size = new System.Drawing.Size(75, 42);
-            this.btnEntry.TabIndex = 1;
-            this.btnEntry.Text = "Call Database";
-            this.btnEntry.UseVisualStyleBackColor = true;
-            this.btnEntry.Click += new System.EventHandler(this.button4_Click);
+            this.tabPage1.Text = "List 1";
             // 
             // richTextBox10
             // 
             this.richTextBox10.Enabled = false;
-            this.richTextBox10.Location = new System.Drawing.Point(289, 154);
+            this.richTextBox10.Location = new System.Drawing.Point(372, 154);
             this.richTextBox10.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox10.Name = "richTextBox10";
             this.richTextBox10.Size = new System.Drawing.Size(124, 20);
@@ -166,7 +156,7 @@
             this.richTextBox5.Location = new System.Drawing.Point(12, 154);
             this.richTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(265, 20);
+            this.richTextBox5.Size = new System.Drawing.Size(337, 20);
             this.richTextBox5.TabIndex = 0;
             this.richTextBox5.Text = "";
             this.richTextBox5.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -174,7 +164,7 @@
             // richTextBox9
             // 
             this.richTextBox9.Enabled = false;
-            this.richTextBox9.Location = new System.Drawing.Point(289, 121);
+            this.richTextBox9.Location = new System.Drawing.Point(372, 121);
             this.richTextBox9.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.Size = new System.Drawing.Size(124, 20);
@@ -188,7 +178,7 @@
             this.richTextBox4.Location = new System.Drawing.Point(12, 121);
             this.richTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(265, 20);
+            this.richTextBox4.Size = new System.Drawing.Size(337, 20);
             this.richTextBox4.TabIndex = 0;
             this.richTextBox4.Text = "";
             this.richTextBox4.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -196,7 +186,7 @@
             // richTextBox8
             // 
             this.richTextBox8.Enabled = false;
-            this.richTextBox8.Location = new System.Drawing.Point(289, 88);
+            this.richTextBox8.Location = new System.Drawing.Point(372, 88);
             this.richTextBox8.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox8.Name = "richTextBox8";
             this.richTextBox8.Size = new System.Drawing.Size(124, 20);
@@ -210,7 +200,7 @@
             this.richTextBox3.Location = new System.Drawing.Point(12, 88);
             this.richTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(265, 20);
+            this.richTextBox3.Size = new System.Drawing.Size(337, 20);
             this.richTextBox3.TabIndex = 0;
             this.richTextBox3.Text = "";
             this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -218,7 +208,7 @@
             // richTextBox7
             // 
             this.richTextBox7.Enabled = false;
-            this.richTextBox7.Location = new System.Drawing.Point(289, 55);
+            this.richTextBox7.Location = new System.Drawing.Point(372, 55);
             this.richTextBox7.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox7.Name = "richTextBox7";
             this.richTextBox7.Size = new System.Drawing.Size(124, 20);
@@ -232,7 +222,7 @@
             this.richTextBox2.Location = new System.Drawing.Point(12, 55);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(265, 20);
+            this.richTextBox2.Size = new System.Drawing.Size(337, 20);
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -240,7 +230,7 @@
             // richTextBox6
             // 
             this.richTextBox6.Enabled = false;
-            this.richTextBox6.Location = new System.Drawing.Point(289, 22);
+            this.richTextBox6.Location = new System.Drawing.Point(372, 22);
             this.richTextBox6.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.Size = new System.Drawing.Size(124, 20);
@@ -248,9 +238,19 @@
             this.richTextBox6.Text = "";
             this.richTextBox6.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
+            // btnEntry
+            // 
+            this.btnEntry.Location = new System.Drawing.Point(879, 605);
+            this.btnEntry.Name = "btnEntry";
+            this.btnEntry.Size = new System.Drawing.Size(75, 42);
+            this.btnEntry.TabIndex = 1;
+            this.btnEntry.Text = "Call Database";
+            this.btnEntry.UseVisualStyleBackColor = true;
+            this.btnEntry.Click += new System.EventHandler(this.button4_Click);
+            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(879, 315);
+            this.button3.Location = new System.Drawing.Point(879, 509);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(89, 44);
             this.button3.TabIndex = 4;
@@ -290,6 +290,7 @@
             this.btnCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCal.ForeColor = System.Drawing.Color.Green;
+            this.btnCal.Image = ((System.Drawing.Image)(resources.GetObject("btnCal.Image")));
             this.btnCal.Location = new System.Drawing.Point(0, 340);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(186, 50);
@@ -308,6 +309,7 @@
             this.btnAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlarm.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAlarm.ForeColor = System.Drawing.Color.Green;
+            this.btnAlarm.Image = ((System.Drawing.Image)(resources.GetObject("btnAlarm.Image")));
             this.btnAlarm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlarm.Location = new System.Drawing.Point(0, 290);
             this.btnAlarm.Name = "btnAlarm";
@@ -327,6 +329,7 @@
             this.btnTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTodo.ForeColor = System.Drawing.Color.Green;
+            this.btnTodo.Image = ((System.Drawing.Image)(resources.GetObject("btnTodo.Image")));
             this.btnTodo.Location = new System.Drawing.Point(0, 240);
             this.btnTodo.Name = "btnTodo";
             this.btnTodo.Size = new System.Drawing.Size(186, 50);
@@ -345,6 +348,7 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.ForeColor = System.Drawing.Color.Green;
+            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.Location = new System.Drawing.Point(0, 605);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(186, 60);
@@ -363,6 +367,7 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.Green;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.Location = new System.Drawing.Point(0, 190);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(186, 50);
@@ -396,6 +401,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(54, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(75, 75);
@@ -405,6 +411,7 @@
             // 
             // logo
             // 
+            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
             this.logo.Location = new System.Drawing.Point(807, 12);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(152, 100);
@@ -450,9 +457,30 @@
             this.panel2.Size = new System.Drawing.Size(264, 148);
             this.panel2.TabIndex = 8;
             // 
+            // richTextBox12
+            // 
+            this.richTextBox12.Enabled = false;
+            this.richTextBox12.Location = new System.Drawing.Point(16, 100);
+            this.richTextBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox12.Name = "richTextBox12";
+            this.richTextBox12.Size = new System.Drawing.Size(227, 20);
+            this.richTextBox12.TabIndex = 3;
+            this.richTextBox12.Text = "";
+            // 
+            // richTextBox11
+            // 
+            this.richTextBox11.Enabled = false;
+            this.richTextBox11.Location = new System.Drawing.Point(16, 67);
+            this.richTextBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox11.Name = "richTextBox11";
+            this.richTextBox11.Size = new System.Drawing.Size(227, 20);
+            this.richTextBox11.TabIndex = 2;
+            this.richTextBox11.Text = "";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
@@ -484,6 +512,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(16, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
@@ -502,32 +531,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tasks Highlights";
             // 
-            // richTextBox11
-            // 
-            this.richTextBox11.Enabled = false;
-            this.richTextBox11.Location = new System.Drawing.Point(16, 67);
-            this.richTextBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox11.Name = "richTextBox11";
-            this.richTextBox11.Size = new System.Drawing.Size(227, 20);
-            this.richTextBox11.TabIndex = 2;
-            this.richTextBox11.Text = "";
-            // 
-            // richTextBox12
-            // 
-            this.richTextBox12.Enabled = false;
-            this.richTextBox12.Location = new System.Drawing.Point(16, 100);
-            this.richTextBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox12.Name = "richTextBox12";
-            this.richTextBox12.Size = new System.Drawing.Size(227, 20);
-            this.richTextBox12.TabIndex = 3;
-            this.richTextBox12.Text = "";
-            // 
             // Gui1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(978, 665);
+            this.Controls.Add(this.btnEntry);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnX);

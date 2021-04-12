@@ -1,3 +1,1 @@
-user :	myName
-list 1:	einkaufen,putzen,Küche machen,Sauber machen,Tanken
-list 2:	dekorieren,waschen
+Calendar[12.04.2021 ],isdfjsdf[30.04.2021 ],sfdsdfsdfs[12.04.2021 ]

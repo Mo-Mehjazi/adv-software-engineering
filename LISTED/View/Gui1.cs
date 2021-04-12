@@ -38,7 +38,7 @@ namespace Test_LISTED
             pnlNav.Top = btnHome.Top;
             pnlNav.Left = btnHome.Left;
             btnHome.BackColor = Color.FromArgb(0, 64, 64);
-
+            load_Database();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -68,6 +68,8 @@ namespace Test_LISTED
             if ((this.richTextBox1.Text.Length == 0) && (Storage.Count == 1))
             {
                 this.richTextBox1.Text = Storage.myLocalName;
+                string myTest = Storage.myLocalDate.ToString();
+                System.Diagnostics.Debug.WriteLine(myTest);
                 this.richTextBox6.Text = Storage.myLocalDate.ToString();
             }
            
@@ -132,6 +134,22 @@ namespace Test_LISTED
 
             myModel.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile);
 
+            /* is calendar set? */
+            DateTime dateTime = new DateTime();
+            dateTime = dateTime.Date;
+            int result = DateTime.Compare(Storage.myLocalDate.Date, dateTime);
+            if ((Storage.myLocalAlarm) && (result != 0))
+            {
+                if (this.richTextBox11.Text.Length == 0)
+                {
+                    this.richTextBox11.Text = Storage.myLocalName;
+                }
+
+                else if (this.richTextBox12.Text.Length == 0)
+                {
+                    this.richTextBox12.Text = Storage.myLocalName;
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -161,11 +179,7 @@ namespace Test_LISTED
 
         private void Gui1_Load(object sender, EventArgs e)
         {
-            DateTime dateTime = new DateTime();
-            if((System.DateTime.Now >= Storage.myLocalDate) && (Storage.myLocalAlarm))
-            {
-                this.richTextBox11.Text = Storage.myLocalName;
-            }
+
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -270,12 +284,8 @@ namespace Test_LISTED
             }
         }
 
-        int n = 0;
-        private IEnumerable<object> arrayPart;
-
-        private void button4_Click(object sender, EventArgs e)
+        private void load_Database()
         {
-
             /* add content from database */
             IoDatastorage mydatastorage = new IoDatastorage();
             string myInput = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
@@ -301,9 +311,16 @@ namespace Test_LISTED
             {
                 int n = 0;
                 ArrayList arrayPart = new ArrayList();
+                ArrayList arrayPartDate = new ArrayList();
+
+
                 foreach (string part in myInput.Split(","))
                 {
-                    arrayPart.Add(part.Substring(0, part.IndexOf("[")));
+                    string myLocalItem = part.Substring(0, part.IndexOf("["));
+                    arrayPart.Add(myLocalItem);
+                    string myLocalDatum = part.Substring(part.IndexOf("[") + 1, 11);
+                    //System.Diagnostics.Debug.WriteLine("HIER HIER HIER: " + part.Substring(part.IndexOf("[")) + " " + part.Substring(part.IndexOf("]")-1));
+                    arrayPartDate.Add(myLocalDatum);
                 }
                 foreach (Object obj in arrayPart)
                 {
@@ -330,12 +347,12 @@ namespace Test_LISTED
                     n++;
                 }
                 n = 0;
-                foreach(string part in myInput.Split("[", myInput.IndexOf("]")))
-                {
-                    arrayPart.Clear();
-                    arrayPart.Add(part);
-                }
-                foreach(Object obj in arrayPart)
+                //foreach(string part in myInput.Split("["))
+                //{
+                //    arrayPart.Clear();
+                //    arrayPart.Add(part.Substring(0, myInput.IndexOf("]")));
+                //}
+                foreach (Object obj in arrayPartDate)
                 {
                     if (n == 0)
                     {
@@ -361,11 +378,15 @@ namespace Test_LISTED
                 }
 
             }
-            catch (System.ArgumentOutOfRangeException)
+            catch (System.ArgumentOutOfRangeException outofRange)
             {
-                this.richTextBox5.Text = "FEHLER";
+                System.Diagnostics.Debug.WriteLine(outofRange.Message);
             }
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            load_Database();
         }
     }
 }
