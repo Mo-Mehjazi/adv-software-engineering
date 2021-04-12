@@ -63,7 +63,44 @@ namespace Test_LISTED
         private void button1_Click(object sender, EventArgs e)
         {
             IoDatastorage myModel = new IoDatastorage();
-            string myInput = (this.richTextBox1.Text);
+
+
+            if ((this.richTextBox1.Text.Length == 0) && (Storage.Count == 1))
+            {
+                this.richTextBox1.Text = Storage.myLocalName;
+                this.richTextBox6.Text = Storage.myLocalDate.ToString();
+            }
+           
+            if ((this.richTextBox2.Text.Length == 0) && (Storage.Count == 2))
+            {
+                this.richTextBox2.Text = Storage.myLocalName;
+                this.richTextBox7.Text = Storage.myLocalDate.ToString();
+            }
+
+            if ((this.richTextBox3.Text.Length == 0) && (Storage.Count == 3))
+            {
+                this.richTextBox3.Text = Storage.myLocalName;
+                this.richTextBox8.Text = Storage.myLocalDate.ToString();
+            }
+
+            if ((this.richTextBox4.Text.Length == 0) && (Storage.Count == 4))
+            {
+                this.richTextBox4.Text = Storage.myLocalName;
+                this.richTextBox9.Text = Storage.myLocalDate.ToString();
+            }
+
+            if ((this.richTextBox5.Text.Length == 0) && (Storage.Count == 5))
+            {
+                this.richTextBox5.Text = Storage.myLocalName;
+                this.richTextBox10.Text = Storage.myLocalDate.ToString();
+            }
+
+            string myInput = "";
+            if (richTextBox1.Text.Length > 0)
+            {
+                myInput = (this.richTextBox1.Text);
+                myInput += "[" + this.richTextBox6.Text +"]";
+            }
 
             //if (new FileInfo(Storage.s_PathTextfile).Length != 0)
             {
@@ -71,23 +108,30 @@ namespace Test_LISTED
                 {
                     myInput += (",");
                     myInput += (this.richTextBox2.Text);
+                    myInput += "[" + this.richTextBox7.Text + "]";
                 }
                 if (richTextBox3.Text.Length > 0)
                 {
                     myInput += (",");
                     myInput += (this.richTextBox3.Text);
+                    myInput += "[" + this.richTextBox8.Text + "]";
                 }
                 if (richTextBox4.Text.Length > 0)
                 {
                     myInput += (",");
                     myInput += (this.richTextBox4.Text);
+                    myInput += "[" + this.richTextBox9.Text + "]";
                 }
                 if (richTextBox5.Text.Length > 0)
                 {
                     myInput += (",");
                     myInput += (this.richTextBox5.Text);
+                    myInput += "[" + this.richTextBox10.Text + "]";
                 }
             }
+
+            myModel.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -117,7 +161,11 @@ namespace Test_LISTED
 
         private void Gui1_Load(object sender, EventArgs e)
         {
-
+            DateTime dateTime = new DateTime();
+            if((System.DateTime.Now >= Storage.myLocalDate) && (Storage.myLocalAlarm))
+            {
+                this.richTextBox11.Text = Storage.myLocalName;
+            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -243,6 +291,11 @@ namespace Test_LISTED
             this.richTextBox3.Text = "";
             this.richTextBox4.Text = "";
             this.richTextBox5.Text = "";
+            this.richTextBox6.Text = "";
+            this.richTextBox7.Text = "";
+            this.richTextBox8.Text = "";
+            this.richTextBox9.Text = "";
+            this.richTextBox10.Text = "";
 
             try
             {
@@ -250,7 +303,7 @@ namespace Test_LISTED
                 ArrayList arrayPart = new ArrayList();
                 foreach (string part in myInput.Split(","))
                 {
-                    arrayPart.Add(part);
+                    arrayPart.Add(part.Substring(0, part.IndexOf("[")));
                 }
                 foreach (Object obj in arrayPart)
                 {
@@ -273,6 +326,36 @@ namespace Test_LISTED
                     if (n == 4)
                     {
                         this.richTextBox5.Text = obj.ToString();
+                    }
+                    n++;
+                }
+                n = 0;
+                foreach(string part in myInput.Split("[", myInput.IndexOf("]")))
+                {
+                    arrayPart.Clear();
+                    arrayPart.Add(part);
+                }
+                foreach(Object obj in arrayPart)
+                {
+                    if (n == 0)
+                    {
+                        this.richTextBox6.Text = obj.ToString();
+                    }
+                    if (n == 1)
+                    {
+                        this.richTextBox7.Text = obj.ToString();
+                    }
+                    if (n == 2)
+                    {
+                        this.richTextBox8.Text = obj.ToString();
+                    }
+                    if (n == 3)
+                    {
+                        this.richTextBox9.Text = obj.ToString();
+                    }
+                    if (n == 4)
+                    {
+                        this.richTextBox10.Text = obj.ToString();
                     }
                     n++;
                 }

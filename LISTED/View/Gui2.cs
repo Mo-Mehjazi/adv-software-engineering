@@ -6,6 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Test_LISTED.Model;
+using Test_LISTED.View;
+using System.Runtime.InteropServices;
+using Test_LISTED.Controller;
 
 namespace Test_LISTED.View
 {
@@ -33,7 +37,14 @@ namespace Test_LISTED.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            /* button to save calendar date */
+            Storage.Count = Storage.Count + 1;
+            Storage.myLocalDate = this.dtpDatum.Value.Date;
+            Storage.myLocalName = this.txtName.Text;
+            Storage.myLocalDescription = this.txtBeschreibung.Text;
+            Storage.myLocalAlarm = this.cbWecker.Checked;
+            
+            this.Close();
         }
 
         private void label4_Click(object sender, EventArgs e)

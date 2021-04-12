@@ -34,6 +34,8 @@ namespace Test_LISTED
             //InputHandler myInputHandler = new InputHandler();
             //myInputHandler.int_InputHandler_VerifyUserInput("");
 
+            Storage myStorage = new Storage();
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

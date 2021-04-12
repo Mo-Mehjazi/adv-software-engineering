@@ -81,7 +81,7 @@
             this.txtBeschreibung.Location = new System.Drawing.Point(168, 87);
             this.txtBeschreibung.Multiline = true;
             this.txtBeschreibung.Name = "txtBeschreibung";
-            this.txtBeschreibung.Size = new System.Drawing.Size(199, 38);
+            this.txtBeschreibung.Size = new System.Drawing.Size(201, 38);
             this.txtBeschreibung.TabIndex = 4;
             // 
             // cbWecker
