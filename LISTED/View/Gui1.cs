@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,6 +12,7 @@ using Test_LISTED.View;
 using System.Runtime.InteropServices;
 using Test_LISTED.Controller;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Test_LISTED
 {
@@ -62,8 +63,85 @@ namespace Test_LISTED
         private void button1_Click(object sender, EventArgs e)
         {
             IoDatastorage myModel = new IoDatastorage();
-            richTextBox1.Text = myModel.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
-            //richTextBox1.Text = "Hallo";
+            string myInput = (this.richTextBox1.Text);
+
+            //if (new FileInfo(Storage.s_PathTextfile).Length != 0)
+            {
+                if (richTextBox2.Text.Length > 0)
+                {
+                    myInput += (",");
+                    myInput += (this.richTextBox2.Text);
+                }
+                if (richTextBox3.Text.Length > 0)
+                {
+                    myInput += (",");
+                    myInput += (this.richTextBox3.Text);
+                }
+                if (richTextBox4.Text.Length > 0)
+                {
+                    myInput += (",");
+                    myInput += (this.richTextBox4.Text);
+                }
+                if (richTextBox5.Text.Length > 0)
+                {
+                    myInput += (",");
+                    myInput += (this.richTextBox5.Text);
+                }
+
+                if (myModel.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile) != 1)
+                {
+                    this.richTextBox3.Text = myModel.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
+                }
+
+                /* EMPTY ALL CONTENT & READ FROM DATABASE */
+                this.richTextBox1.Text = "";
+                this.richTextBox2.Text = "";
+                this.richTextBox3.Text = "";
+                this.richTextBox4.Text = "";
+                this.richTextBox5.Text = "";
+
+                myInput = myModel.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
+
+                try
+                {
+                    int n = 0;
+                    ArrayList arrayPart = new ArrayList();
+                    foreach (string part in myInput.Split(","))
+                    {
+                        arrayPart.Add(part);
+                    }
+                    foreach (Object obj in arrayPart)
+                    {
+                        if (n == 0)
+                        {
+                            this.richTextBox1.Text = obj.ToString();
+                        }
+                        if (n == 1)
+                        {
+                            this.richTextBox2.Text = obj.ToString();
+                        }
+                        if (n == 2)
+                        {
+                            this.richTextBox3.Text = obj.ToString();
+                        }
+                        if (n == 3)
+                        {
+                            this.richTextBox4.Text = obj.ToString();
+                        }
+                        if (n == 4)
+                        {
+                            this.richTextBox5.Text = obj.ToString();
+                        }
+                        n++;
+                        //System.Diagnostics.Debug.WriteLine(obj.ToString());
+                    }
+
+                }
+                catch (System.ArgumentOutOfRangeException)
+                {
+                    this.richTextBox5.Text = "FEHLER";
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -199,77 +277,62 @@ namespace Test_LISTED
         }
 
         int n = 0;
+        private IEnumerable<object> arrayPart;
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //RichTextBox textBoxNew = new RichTextBox();
-            ////System.Drawing.Point myPoint = new System.Drawing.Point(22, 59);
-            //System.Drawing.Point myPoint = new System.Drawing.Point(this.richTextBox1.Location.X + 220, this.richTextBox1.Location.Y + 480);
-
-            //textBoxNew.Location = myPoint;
-            //textBoxNew.Margin = new System.Windows.Forms.Padding(2);
-            //textBoxNew.Size = new System.Drawing.Size(344, 20);
-            //textBoxNew.Text = "";
-            //textBoxNew.Name = "textBox_" + n.ToString();
-            //textBoxNew.TabIndex = this.richTextBox1.TabIndex + n;
-            //n++;
-
-            //this.tabPage1.Controls.Add(textBoxNew);
-            //this.Controls.Add(textBoxNew);
-
-            //this.richTextBox1.Text = "Hallo";
-            //textBoxNew.Text = "Das hier ist ein neuer Textttttttttttttttttttttttttttttttttttttttttt.";
-
 
             /* add content from database */
             IoDatastorage mydatastorage = new IoDatastorage();
             string myTest = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
 
-            foreach (string line in myTest.Split("\n"))
-            {
-                {
-                    if (line.StartsWith("list"))
-                    {
-                        if (line.Substring(5, 1).Equals("1", StringComparison.Ordinal))
-                        {
-                            {
-                                int index = line.IndexOf(",");
-                                if(index > 0)
-                                {
-                                    this.richTextBox1.Text = line.Substring(8, index);
-                                }
-                                string myLocalSubString = line.Remove(0, index+1);
-                                index = myLocalSubString.IndexOf(",");
-                                if(index > 0)
-                                {
-                                    this.richTextBox2.Text = myLocalSubString.Substring(0, index);
-                                }
-                                myLocalSubString = line.Remove(0, index + 1);
-                                index = myLocalSubString.IndexOf(",");
-                                if (index > 0)
-                                {
-                                    this.richTextBox3.Text = myLocalSubString.Substring(0, index);
-                                }
-                                myLocalSubString = line.Remove(0, index + 1);
-                                index = myLocalSubString.IndexOf(",");
-                                if (index > 0)
-                                {
-                                    this.richTextBox4.Text = myLocalSubString.Substring(0, index);
-                                }
-                                myLocalSubString = line.Remove(0, index + 1);
-                                index = myLocalSubString.IndexOf(",");
-                                if (index > 0)
-                                {
-                                    this.richTextBox5.Text = myLocalSubString.Substring(0, index);
-                                }
+            this.richTextBox4.Text = myTest;
 
-                            }
-                        }
-
-                    }                   
-            
-                }
-            }
+            //foreach (string line in myTest.Split("\n"))
+            //{
+            //    {
+            //        if (line.StartsWith("list"))
+            //        {
+            //            if (line.Substring(5, 1).Equals("1", StringComparison.Ordinal))
+            //            {
+            //                {
+            //                    int index = line.IndexOf(",");
+            //                    if(index > 0)
+            //                    {
+            //                        this.richTextBox1.Text = line.Substring(8, index);
+            //                    }
+            //                    string myLocalSubString = line.Remove(0, index+1);
+            //                    index = myLocalSubString.IndexOf(",");
+            //                    if(index > 0)
+            //                    {
+            //                        this.richTextBox2.Text = myLocalSubString.Substring(0, index);
+            //                    }
+            //                    myLocalSubString = line.Remove(0, index + 1);
+            //                    index = myLocalSubString.IndexOf(",");
+            //                    if (index > 0)
+            //                    {
+            //                        this.richTextBox3.Text = myLocalSubString.Substring(0, index);
+            //                    }
+            //                    myLocalSubString = line.Remove(0, index + 1);
+            //                    index = myLocalSubString.IndexOf(",");
+            //                    if (index > 0)
+            //                    {
+            //                        this.richTextBox4.Text = myLocalSubString.Substring(0, index);
+            //                    }
+            //                    myLocalSubString = line.Remove(0, index + 1);
+            //                    index = myLocalSubString.IndexOf(",");
+            //                    if (index > 0)
+            //                    {
+            //                        this.richTextBox5.Text = myLocalSubString.Substring(0, index);
+            //                    }
+            //
+            //                }
+            //            }
+            //
+            //        }                   
+            //
+            //    }
+            //}
         }
     }
 }

@@ -31,7 +31,14 @@ namespace Test_LISTED.Model
         public int int_IoDatastorage_WriteDataToStorage(string string_Data, string string_Path)
         {
             /* Write given string_Data into file at string_Path. */
-            File.WriteAllText(string_Path, string_Data);
+            try
+            {
+                File.WriteAllText(string_Path, string_Data);
+            }
+            catch(FileNotFoundException e)
+            {
+                return 1;
+            }
             return 0;
         }
 
