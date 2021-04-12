@@ -188,11 +188,6 @@ namespace Test_LISTED
             pnlNav.Top = btnHome.Top;
             pnlNav.Left = btnHome.Left;
             btnHome.BackColor = Color.FromArgb(0, 64, 64);
-
-            InputHandler myInputHandler = new InputHandler();
-            myInputHandler.int_InputHandler_VerifyUserInput("");
-            this.richTextBox1.Text += myInputHandler.int_InputHandler_VerifyUserInput("");
-
         }
 
         private void btnTodo_Click(object sender, EventArgs e)
