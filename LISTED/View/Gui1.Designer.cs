@@ -81,10 +81,10 @@
             // richTextBox1
             // 
             this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(12, 22);
+            this.richTextBox1.Location = new System.Drawing.Point(57, 22);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(337, 20);
+            this.richTextBox1.Size = new System.Drawing.Size(292, 20);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -153,10 +153,10 @@
             // richTextBox5
             // 
             this.richTextBox5.Enabled = false;
-            this.richTextBox5.Location = new System.Drawing.Point(12, 154);
+            this.richTextBox5.Location = new System.Drawing.Point(57, 154);
             this.richTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(337, 20);
+            this.richTextBox5.Size = new System.Drawing.Size(292, 20);
             this.richTextBox5.TabIndex = 0;
             this.richTextBox5.Text = "";
             this.richTextBox5.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -175,10 +175,10 @@
             // richTextBox4
             // 
             this.richTextBox4.Enabled = false;
-            this.richTextBox4.Location = new System.Drawing.Point(12, 121);
+            this.richTextBox4.Location = new System.Drawing.Point(57, 121);
             this.richTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(337, 20);
+            this.richTextBox4.Size = new System.Drawing.Size(292, 20);
             this.richTextBox4.TabIndex = 0;
             this.richTextBox4.Text = "";
             this.richTextBox4.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -197,10 +197,10 @@
             // richTextBox3
             // 
             this.richTextBox3.Enabled = false;
-            this.richTextBox3.Location = new System.Drawing.Point(12, 88);
+            this.richTextBox3.Location = new System.Drawing.Point(57, 88);
             this.richTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(337, 20);
+            this.richTextBox3.Size = new System.Drawing.Size(292, 20);
             this.richTextBox3.TabIndex = 0;
             this.richTextBox3.Text = "";
             this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -219,10 +219,10 @@
             // richTextBox2
             // 
             this.richTextBox2.Enabled = false;
-            this.richTextBox2.Location = new System.Drawing.Point(12, 55);
+            this.richTextBox2.Location = new System.Drawing.Point(57, 55);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(337, 20);
+            this.richTextBox2.Size = new System.Drawing.Size(292, 20);
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
