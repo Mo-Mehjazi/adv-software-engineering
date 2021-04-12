@@ -226,12 +226,12 @@ namespace Test_LISTED
             if (this.btnLogOut.Text.Equals("Log in!"))
             {
                 this.btnLogOut.Text = "Log out!";
+
                 string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-                this.userLabel.Text = username;
-                if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Temp\" + Environment.UserName + ".bmp"))
-                {
-                    this.pictureBox2.Image = Image.FromFile(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Temp\" + Environment.UserName + ".bmp");
-                }
+                
+                string myName = username.Substring(username.IndexOf("\\")+1);
+                this.userLabel.Text = myName;
+                
             }
             else
             {
