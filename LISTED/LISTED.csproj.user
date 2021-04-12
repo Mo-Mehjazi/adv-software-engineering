@@ -8,5 +8,8 @@
     <Compile Update="View\Gui2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

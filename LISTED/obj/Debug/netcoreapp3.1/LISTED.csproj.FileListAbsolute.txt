@@ -36,3 +36,4 @@ C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcore
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.pdb
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.genruntimeconfig.cache
 C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csprojAssemblyReference.cache
+C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.View.Login.resources

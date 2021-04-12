@@ -53,7 +53,7 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.userLable = new System.Windows.Forms.Label();
+            this.userLabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
             this.lblHome = new System.Windows.Forms.Label();
@@ -353,7 +353,7 @@
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(186, 60);
             this.btnLogOut.TabIndex = 1;
-            this.btnLogOut.Text = "Log out!";
+            this.btnLogOut.Text = "Log in!";
             this.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
@@ -380,7 +380,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.userLable);
+            this.panel1.Controls.Add(this.userLabel);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -388,16 +388,16 @@
             this.panel1.Size = new System.Drawing.Size(186, 190);
             this.panel1.TabIndex = 0;
             // 
-            // userLable
+            // userLabel
             // 
-            this.userLable.AutoSize = true;
-            this.userLable.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.userLable.Location = new System.Drawing.Point(54, 119);
-            this.userLable.Name = "userLable";
-            this.userLable.Size = new System.Drawing.Size(74, 15);
-            this.userLable.TabIndex = 1;
-            this.userLable.Text = "User Name";
-            this.userLable.Click += new System.EventHandler(this.label1_Click);
+            this.userLabel.AutoSize = true;
+            this.userLabel.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.userLabel.Location = new System.Drawing.Point(54, 119);
+            this.userLabel.Name = "userLabel";
+            this.userLabel.Size = new System.Drawing.Size(74, 15);
+            this.userLabel.TabIndex = 1;
+            this.userLabel.Text = "User Name";
+            this.userLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -584,7 +584,7 @@
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox logo;
-        private System.Windows.Forms.Label userLable;
+        private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnCal;

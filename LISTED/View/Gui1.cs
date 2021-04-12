@@ -223,6 +223,21 @@ namespace Test_LISTED
             pnlNav.Height = btnLogOut.Height;
             pnlNav.Top = btnLogOut.Top;
             btnLogOut.BackColor = Color.FromArgb(0, 64, 64);
+            if (this.btnLogOut.Text.Equals("Log in!"))
+            {
+                this.btnLogOut.Text = "Log out!";
+                string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+                this.userLabel.Text = username;
+                if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Temp\" + Environment.UserName + ".bmp"))
+                {
+                    this.pictureBox2.Image = Image.FromFile(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Temp\" + Environment.UserName + ".bmp");
+                }
+            }
+            else
+            {
+                this.btnLogOut.Text = "Log in!";
+                this.userLabel.Text = "User Name";
+            }
         }
 
         private void btnHome_Leave(object sender, EventArgs e)
