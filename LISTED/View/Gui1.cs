@@ -60,42 +60,62 @@ namespace Test_LISTED
             }
         }
 
+        private void WriteContentIntoTextboxes()
+        {
+            /* Write the content as given from count into the next empty textbox. */
+
+            switch(Storage.Count)
+            {
+                case 1:
+                    if ((this.richTextBox1.Text.Length == 0) && (Storage.Count == 1))
+                    {
+                        this.richTextBox1.Text = Storage.myLocalName;
+                        string myTest = Storage.myLocalDate.ToString();
+                        System.Diagnostics.Debug.WriteLine(myTest);
+                        this.richTextBox6.Text = Storage.myLocalDate.ToString();
+                    }
+                    break;
+                case 2:
+                    if ((this.richTextBox2.Text.Length == 0) && (Storage.Count == 2))
+                    {
+                        this.richTextBox2.Text = Storage.myLocalName;
+                        this.richTextBox7.Text = Storage.myLocalDate.ToString();
+                    }
+                    break;
+                case 3:
+                    if ((this.richTextBox3.Text.Length == 0) && (Storage.Count == 3))
+                    {
+                        this.richTextBox3.Text = Storage.myLocalName;
+                        this.richTextBox8.Text = Storage.myLocalDate.ToString();
+                    }
+                    break;
+                case 4:
+                    if ((this.richTextBox4.Text.Length == 0) && (Storage.Count == 4))
+                    {
+                        this.richTextBox4.Text = Storage.myLocalName;
+                        this.richTextBox9.Text = Storage.myLocalDate.ToString();
+                    }
+                    break;
+                case 5:
+                    if ((this.richTextBox5.Text.Length == 0) && (Storage.Count == 5))
+                    {
+                        this.richTextBox5.Text = Storage.myLocalName;
+                        this.richTextBox10.Text = Storage.myLocalDate.ToString();
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+            return;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             IoDatastorage myModel = new IoDatastorage();
 
+            WriteContentIntoTextboxes();
 
-            if ((this.richTextBox1.Text.Length == 0) && (Storage.Count == 1))
-            {
-                this.richTextBox1.Text = Storage.myLocalName;
-                string myTest = Storage.myLocalDate.ToString();
-                System.Diagnostics.Debug.WriteLine(myTest);
-                this.richTextBox6.Text = Storage.myLocalDate.ToString();
-            }
-           
-            if ((this.richTextBox2.Text.Length == 0) && (Storage.Count == 2))
-            {
-                this.richTextBox2.Text = Storage.myLocalName;
-                this.richTextBox7.Text = Storage.myLocalDate.ToString();
-            }
-
-            if ((this.richTextBox3.Text.Length == 0) && (Storage.Count == 3))
-            {
-                this.richTextBox3.Text = Storage.myLocalName;
-                this.richTextBox8.Text = Storage.myLocalDate.ToString();
-            }
-
-            if ((this.richTextBox4.Text.Length == 0) && (Storage.Count == 4))
-            {
-                this.richTextBox4.Text = Storage.myLocalName;
-                this.richTextBox9.Text = Storage.myLocalDate.ToString();
-            }
-
-            if ((this.richTextBox5.Text.Length == 0) && (Storage.Count == 5))
-            {
-                this.richTextBox5.Text = Storage.myLocalName;
-                this.richTextBox10.Text = Storage.myLocalDate.ToString();
-            }
 
             string myInput = "";
             if (richTextBox1.Text.Length > 0)
