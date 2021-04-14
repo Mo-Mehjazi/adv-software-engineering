@@ -398,5 +398,221 @@ namespace Test_LISTED
         {
             load_Database();
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.richTextBox13.Text.Length != 0)
+            {
+                this.richTextBox13.Text = this.richTextBox2.Text;
+            }
+            else if (this.richTextBox14.Text.Length != 0)
+            {
+                this.richTextBox14.Text = this.richTextBox2.Text;
+            }
+
+            return;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.richTextBox13.Text.Length != 0)
+            {
+                this.richTextBox13.Text = this.richTextBox3.Text;
+            }
+            else if (this.richTextBox14.Text.Length != 0)
+            {
+                this.richTextBox14.Text = this.richTextBox3.Text;
+            }
+
+            return;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.richTextBox13.Text.Length != 0)
+            {
+                this.richTextBox13.Text = this.richTextBox4.Text;
+            }
+            else if (this.richTextBox14.Text.Length != 0)
+            {
+                this.richTextBox14.Text = this.richTextBox4.Text;
+            }
+
+            return;
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.richTextBox13.Text.Length != 0)
+            {
+                this.richTextBox13.Text = this.richTextBox5.Text;
+            }
+            else if (this.richTextBox14.Text.Length != 0)
+            {
+                this.richTextBox14.Text = this.richTextBox5.Text;
+            }
+
+            return;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (true == this.checkBox1.Checked)
+            {
+                if (this.richTextBox13.Text.Length == 0)
+                {
+                    this.richTextBox13.Text = this.richTextBox1.Text;
+                    return;
+                }
+                else if (this.richTextBox14.Text.Length == 0)
+                {
+                    this.richTextBox14.Text = this.richTextBox1.Text;
+                    return;
+                }
+            }
+            else
+            {
+                if(this.richTextBox13.Text == this.richTextBox1.Text)
+                {
+                    this.richTextBox13.Text = "";
+                    return;
+                }
+                else if(this.richTextBox14.Text == this.richTextBox1.Text)
+                {
+                    this.richTextBox14.Text = "";
+                    return;
+                }
+            }
+
+            return;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (true == this.checkBox2.Checked)
+            {
+                if (this.richTextBox13.Text.Length == 0)
+                {
+                    this.richTextBox13.Text = this.richTextBox2.Text;
+                    return;
+                }
+                else if (this.richTextBox14.Text.Length == 0)
+                {
+                    this.richTextBox14.Text = this.richTextBox2.Text;
+                    return;
+                }
+            }
+            else
+            {
+                if (this.richTextBox13.Text == this.richTextBox2.Text)
+                {
+                    this.richTextBox13.Text = "";
+                    return;
+                }
+                else if (this.richTextBox14.Text == this.richTextBox2.Text)
+                {
+                    this.richTextBox14.Text = "";
+                    return;
+                }
+            }
+
+            return;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (true == this.checkBox3.Checked)
+            {
+                if (this.richTextBox13.Text.Length == 0)
+                {
+                    this.richTextBox13.Text = this.richTextBox3.Text;
+                    return;
+                }
+                else if (this.richTextBox14.Text.Length == 0)
+                {
+                    this.richTextBox14.Text = this.richTextBox3.Text;
+                    return;
+                }
+            }
+            else
+            {
+                if (this.richTextBox13.Text == this.richTextBox3.Text)
+                {
+                    this.richTextBox13.Text = "";
+                    return;
+                }
+                else if (this.richTextBox14.Text == this.richTextBox3.Text)
+                {
+                    this.richTextBox14.Text = "";
+                    return;
+                }
+            }
+
+            return;
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (true == this.checkBox4.Checked)
+            {
+                if (this.richTextBox13.Text.Length == 0)
+                {
+                    this.richTextBox13.Text = this.richTextBox4.Text;
+                    return;
+                }
+                else if (this.richTextBox14.Text.Length == 0)
+                {
+                    this.richTextBox14.Text = this.richTextBox4.Text;
+                    return;
+                }
+            }
+            else
+            {
+                if (this.richTextBox13.Text == this.richTextBox4.Text)
+                {
+                    this.richTextBox13.Text = "";
+                    return;
+                }
+                else if (this.richTextBox14.Text == this.richTextBox4.Text)
+                {
+                    this.richTextBox14.Text = "";
+                    return;
+                }
+            }
+
+            return;
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (true == this.checkBox5.Checked)
+            {
+                if (this.richTextBox13.Text.Length == 0)
+                {
+                    this.richTextBox13.Text = this.richTextBox5.Text;
+                    return;
+                }
+                else if (this.richTextBox14.Text.Length == 0)
+                {
+                    this.richTextBox14.Text = this.richTextBox5.Text;
+                    return;
+                }
+            }
+            else
+            {
+                if (this.richTextBox13.Text == this.richTextBox5.Text)
+                {
+                    this.richTextBox13.Text = "";
+                    return;
+                }
+                else if (this.richTextBox14.Text == this.richTextBox5.Text)
+                {
+                    this.richTextBox14.Text = "";
+                    return;
+                }
+            }
+
+            return;
+        }
     }
 }
