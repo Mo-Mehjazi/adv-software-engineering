@@ -165,7 +165,7 @@ namespace Test_LISTED
             return;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Save_Click(object sender, EventArgs e)
         {
             /* Write content to Gui (1), into data storage (2) and check if date is today to write it to another text box (3). */
 
