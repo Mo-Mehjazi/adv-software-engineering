@@ -146,6 +146,20 @@ namespace Test_LISTED
             return myInput;
         }
 
+        private void WriteTextIntoEmptyRichTextBox ()
+        {
+            if (this.richTextBox11.Text.Length == 0)
+            {
+                this.richTextBox11.Text = Storage.myLocalName;
+            }
+
+            else if (this.richTextBox12.Text.Length == 0)
+            {
+                this.richTextBox12.Text = Storage.myLocalName;
+            }
+            return;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             IoDatastorage myModel = new IoDatastorage();
@@ -159,15 +173,7 @@ namespace Test_LISTED
 
             if ((Storage.myLocalAlarm) && (0 != (DateTime.Compare(Storage.myLocalDate.Date, dateTime.Date))))
             {
-                if (this.richTextBox11.Text.Length == 0)
-                {
-                    this.richTextBox11.Text = Storage.myLocalName;
-                }
-
-                else if (this.richTextBox12.Text.Length == 0)
-                {
-                    this.richTextBox12.Text = Storage.myLocalName;
-                }
+                WriteTextIntoEmptyRichTextBox();
             }
         }
 
