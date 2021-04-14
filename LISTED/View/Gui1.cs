@@ -157,8 +157,7 @@ namespace Test_LISTED
             /* is calendar set? */
             DateTime dateTime = new DateTime();
             dateTime = dateTime.Date;
-            int result = DateTime.Compare(Storage.myLocalDate.Date, dateTime);
-            if ((Storage.myLocalAlarm) && (result != 0))
+            if ((Storage.myLocalAlarm) && ((DateTime.Compare(Storage.myLocalDate.Date, dateTime)) != 0))
             {
                 if (this.richTextBox11.Text.Length == 0)
                 {
