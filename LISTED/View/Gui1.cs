@@ -108,18 +108,12 @@ namespace Test_LISTED
             return;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void FormalizeContentToString(string myInput)
         {
-            IoDatastorage myModel = new IoDatastorage();
-
-            WriteContentIntoTextboxes();
-
-
-            string myInput = "";
             if (richTextBox1.Text.Length > 0)
             {
                 myInput = (this.richTextBox1.Text);
-                myInput += "[" + this.richTextBox6.Text +"]";
+                myInput += "[" + this.richTextBox6.Text + "]";
             }
 
             if (richTextBox2.Text.Length > 0)
@@ -146,6 +140,18 @@ namespace Test_LISTED
                 myInput += (this.richTextBox5.Text);
                 myInput += "[" + this.richTextBox10.Text + "]";
             }
+
+            return;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IoDatastorage myModel = new IoDatastorage();
+
+            WriteContentIntoTextboxes();
+
+            string myInput = "";
+            FormalizeContentToString(myInput);
 
             myModel.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile);
 
