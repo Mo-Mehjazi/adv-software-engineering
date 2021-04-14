@@ -122,32 +122,29 @@ namespace Test_LISTED
                 myInput += "[" + this.richTextBox6.Text +"]";
             }
 
-            //if (new FileInfo(Storage.s_PathTextfile).Length != 0)
+            if (richTextBox2.Text.Length > 0)
             {
-                if (richTextBox2.Text.Length > 0)
-                {
-                    myInput += (",");
-                    myInput += (this.richTextBox2.Text);
-                    myInput += "[" + this.richTextBox7.Text + "]";
-                }
-                if (richTextBox3.Text.Length > 0)
-                {
-                    myInput += (",");
-                    myInput += (this.richTextBox3.Text);
-                    myInput += "[" + this.richTextBox8.Text + "]";
-                }
-                if (richTextBox4.Text.Length > 0)
-                {
-                    myInput += (",");
-                    myInput += (this.richTextBox4.Text);
-                    myInput += "[" + this.richTextBox9.Text + "]";
-                }
-                if (richTextBox5.Text.Length > 0)
-                {
-                    myInput += (",");
-                    myInput += (this.richTextBox5.Text);
-                    myInput += "[" + this.richTextBox10.Text + "]";
-                }
+                myInput += (",");
+                myInput += (this.richTextBox2.Text);
+                myInput += "[" + this.richTextBox7.Text + "]";
+            }
+            if (richTextBox3.Text.Length > 0)
+            {
+                myInput += (",");
+                myInput += (this.richTextBox3.Text);
+                myInput += "[" + this.richTextBox8.Text + "]";
+            }
+            if (richTextBox4.Text.Length > 0)
+            {
+                myInput += (",");
+                myInput += (this.richTextBox4.Text);
+                myInput += "[" + this.richTextBox9.Text + "]";
+            }
+            if (richTextBox5.Text.Length > 0)
+            {
+                myInput += (",");
+                myInput += (this.richTextBox5.Text);
+                myInput += "[" + this.richTextBox10.Text + "]";
             }
 
             myModel.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile);
