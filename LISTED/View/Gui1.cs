@@ -110,6 +110,8 @@ namespace Test_LISTED
 
         private string FormalizeContentToString()
         {
+            /* Check if text boxes have content, if true take their content and add formalized string to myInput. */
+
             string myInput = "";
 
             if (richTextBox1.Text.Length > 0)
@@ -146,8 +148,10 @@ namespace Test_LISTED
             return myInput;
         }
 
-        private void WriteTextIntoEmptyRichTextBox ()
+        private void WriteContentIntoEmptyRichTextBox ()
         {
+            /* Check if the text boxes are empty, if true fill the next in order with content from storage. */
+
             if (this.richTextBox11.Text.Length == 0)
             {
                 this.richTextBox11.Text = Storage.myLocalName;
@@ -157,24 +161,27 @@ namespace Test_LISTED
             {
                 this.richTextBox12.Text = Storage.myLocalName;
             }
+
             return;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /* Write content to Gui (1), into data storage (2) and check if date is today to write it to another text box (3). */
+
             IoDatastorage myModel = new IoDatastorage();
-
-            WriteContentIntoTextboxes();         
-            
-            myModel.int_IoDatastorage_WriteDataToStorage(FormalizeContentToString(), Storage.s_PathTextfile);
-
-            /* is calendar set? */
             DateTime dateTime = new DateTime();
 
-            if ((Storage.myLocalAlarm) && (0 != (DateTime.Compare(Storage.myLocalDate.Date, dateTime.Date))))
+            WriteContentIntoTextboxes(); /* 1 */
+            
+            myModel.int_IoDatastorage_WriteDataToStorage(FormalizeContentToString(), Storage.s_PathTextfile); /* 2 */
+
+            if ((Storage.myLocalAlarm) && (0 != (DateTime.Compare(Storage.myLocalDate.Date, dateTime.Date)))) /* 3 */
             {
-                WriteTextIntoEmptyRichTextBox();
+                WriteContentIntoEmptyRichTextBox();
             }
+
+            return;
         }
 
         private void button2_Click(object sender, EventArgs e)
