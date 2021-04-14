@@ -108,8 +108,10 @@ namespace Test_LISTED
             return;
         }
 
-        private void FormalizeContentToString(string myInput)
+        private string FormalizeContentToString()
         {
+            string myInput = "";
+
             if (richTextBox1.Text.Length > 0)
             {
                 myInput = (this.richTextBox1.Text);
@@ -141,19 +143,16 @@ namespace Test_LISTED
                 myInput += "[" + this.richTextBox10.Text + "]";
             }
 
-            return;
+            return myInput;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             IoDatastorage myModel = new IoDatastorage();
 
-            WriteContentIntoTextboxes();
-
-            string myInput = "";
-            FormalizeContentToString(myInput);
-
-            myModel.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile);
+            WriteContentIntoTextboxes();         
+            
+            myModel.int_IoDatastorage_WriteDataToStorage(FormalizeContentToString(), Storage.s_PathTextfile);
 
             /* is calendar set? */
             DateTime dateTime = new DateTime();
