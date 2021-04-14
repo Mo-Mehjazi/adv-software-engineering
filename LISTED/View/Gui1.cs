@@ -67,37 +67,35 @@ namespace Test_LISTED
             switch(Storage.Count)
             {
                 case 1:
-                    if ((this.richTextBox1.Text.Length == 0) && (Storage.Count == 1))
+                    if ((this.richTextBox1.Text.Length == 0))
                     {
                         this.richTextBox1.Text = Storage.myLocalName;
-                        string myTest = Storage.myLocalDate.ToString();
-                        System.Diagnostics.Debug.WriteLine(myTest);
                         this.richTextBox6.Text = Storage.myLocalDate.ToString();
                     }
                     break;
                 case 2:
-                    if ((this.richTextBox2.Text.Length == 0) && (Storage.Count == 2))
+                    if ((this.richTextBox2.Text.Length == 0))
                     {
                         this.richTextBox2.Text = Storage.myLocalName;
                         this.richTextBox7.Text = Storage.myLocalDate.ToString();
                     }
                     break;
                 case 3:
-                    if ((this.richTextBox3.Text.Length == 0) && (Storage.Count == 3))
+                    if ((this.richTextBox3.Text.Length == 0))
                     {
                         this.richTextBox3.Text = Storage.myLocalName;
                         this.richTextBox8.Text = Storage.myLocalDate.ToString();
                     }
                     break;
                 case 4:
-                    if ((this.richTextBox4.Text.Length == 0) && (Storage.Count == 4))
+                    if ((this.richTextBox4.Text.Length == 0))
                     {
                         this.richTextBox4.Text = Storage.myLocalName;
                         this.richTextBox9.Text = Storage.myLocalDate.ToString();
                     }
                     break;
                 case 5:
-                    if ((this.richTextBox5.Text.Length == 0) && (Storage.Count == 5))
+                    if ((this.richTextBox5.Text.Length == 0))
                     {
                         this.richTextBox5.Text = Storage.myLocalName;
                         this.richTextBox10.Text = Storage.myLocalDate.ToString();
