@@ -407,7 +407,35 @@ namespace Test_LISTED
             return;
         }
 
-private void load_Database()
+        private ArrayList SplitDataFromStorageName(string myInput)
+        {
+            /* create array list from input from datastorage */
+
+            ArrayList arrayPart = new ArrayList();
+
+            foreach (string part in myInput.Split(","))
+            {
+                arrayPart.Add(part.Substring(0, part.IndexOf("[")));
+            }
+
+            return arrayPart;
+        }
+
+        private ArrayList SplitDataFromStorageDate(string myInput)
+        {
+            /* create array list from input from datastorage */
+
+            ArrayList arrayPartDate = new ArrayList();
+
+            foreach (string part in myInput.Split(","))
+            {
+                arrayPartDate.Add(part.Substring(part.IndexOf("[") + 1, 11));
+            }
+
+            return arrayPartDate;
+        }
+
+        private void load_Database()
         {
             /* add content from database */
             IoDatastorage mydatastorage = new IoDatastorage();
@@ -422,24 +450,17 @@ private void load_Database()
             DeleteContentFromAllTextboxes();
 
             try
-            {
-                ArrayList arrayPart = new ArrayList();
-                ArrayList arrayPartDate = new ArrayList();
-
-                foreach (string part in myInput.Split(","))
-                {
-                    arrayPart.Add(part.Substring(0, part.IndexOf("[")));
-                    string myLocalDatum = part.Substring(part.IndexOf("[") + 1, 11);
-                    arrayPartDate.Add(myLocalDatum);
-                }
-
-                WriteCalendarNameFromDatabaseToTextBoxes(arrayPart);
-                WriteDateFromDatabaseToTextBoxes(arrayPartDate);
+            {  
+                /* try to print data from data storage to the gui */
+                WriteCalendarNameFromDatabaseToTextBoxes(SplitDataFromStorageName(myInput));
+                WriteDateFromDatabaseToTextBoxes(SplitDataFromStorageDate(myInput));
             }
             catch (System.ArgumentOutOfRangeException outofRange)
             {
                 System.Diagnostics.Debug.WriteLine(outofRange.Message);
             }
+
+            return;
         }
 
         private void button4_Click(object sender, EventArgs e)
