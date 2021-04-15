@@ -334,6 +334,7 @@ namespace Test_LISTED
 
             if (mydatastorage.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile) != 1)
             {
+                /* if file was not found, print an error for the user  */
                 this.richTextBox3.Text = "An error occured.";
             }
 
@@ -355,11 +356,9 @@ namespace Test_LISTED
                 ArrayList arrayPart = new ArrayList();
                 ArrayList arrayPartDate = new ArrayList();
 
-
                 foreach (string part in myInput.Split(","))
                 {
-                    string myLocalItem = part.Substring(0, part.IndexOf("["));
-                    arrayPart.Add(myLocalItem);
+                    arrayPart.Add(part.Substring(0, part.IndexOf("[")));
                     string myLocalDatum = part.Substring(part.IndexOf("[") + 1, 11);
                     arrayPartDate.Add(myLocalDatum);
                 }
