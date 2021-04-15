@@ -326,19 +326,10 @@ namespace Test_LISTED
             }
         }
 
-        private void load_Database()
+
+        private void DeleteContentFromAllTextboxes()
         {
-            /* add content from database */
-            IoDatastorage mydatastorage = new IoDatastorage();
-            string myInput = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
-
-            if (mydatastorage.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile) != 1)
-            {
-                /* if file was not found, print an error for the user  */
-                this.richTextBox3.Text = "An error occured.";
-            }
-
-            /* EMPTY ALL CONTENT & READ FROM DATABASE */
+            /* delete contents from textboxes */
             this.richTextBox1.Text = "";
             this.richTextBox2.Text = "";
             this.richTextBox3.Text = "";
@@ -350,9 +341,88 @@ namespace Test_LISTED
             this.richTextBox9.Text = "";
             this.richTextBox10.Text = "";
 
+            return;
+        }
+
+        private void WriteCalendarNameFromDatabaseToTextBoxes(ArrayList arrayPart)
+        {
+            int n = 0;
+
+            foreach (Object obj in arrayPart)
+            {
+                if (n == 0)
+                {
+                    this.richTextBox1.Text = obj.ToString();
+                }
+                if (n == 1)
+                {
+                    this.richTextBox2.Text = obj.ToString();
+                }
+                if (n == 2)
+                {
+                    this.richTextBox3.Text = obj.ToString();
+                }
+                if (n == 3)
+                {
+                    this.richTextBox4.Text = obj.ToString();
+                }
+                if (n == 4)
+                {
+                    this.richTextBox5.Text = obj.ToString();
+                }
+            n++;
+            }
+
+            return;
+        }
+
+        private void WriteDateFromDatabaseToTextBoxes(ArrayList arrayPartDate)
+        {
+            int n = 0;
+            foreach (Object obj in arrayPartDate)
+            {
+                if (n == 0)
+                {
+                    this.richTextBox6.Text = obj.ToString();
+                }
+                if (n == 1)
+                {
+                    this.richTextBox7.Text = obj.ToString();
+                }
+                if (n == 2)
+                {
+                    this.richTextBox8.Text = obj.ToString();
+                }
+                if (n == 3)
+                {
+                    this.richTextBox9.Text = obj.ToString();
+                }
+                if (n == 4)
+                {
+                    this.richTextBox10.Text = obj.ToString();
+                }
+                n++;
+            }
+
+            return;
+        }
+
+private void load_Database()
+        {
+            /* add content from database */
+            IoDatastorage mydatastorage = new IoDatastorage();
+            string myInput = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
+
+            if (mydatastorage.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile) != 1)
+            {
+                /* if file was not found, print an error for the user  */
+                this.richTextBox3.Text = "An error occured.";
+            }
+
+            DeleteContentFromAllTextboxes();
+
             try
             {
-                int n = 0;
                 ArrayList arrayPart = new ArrayList();
                 ArrayList arrayPartDate = new ArrayList();
 
@@ -362,57 +432,9 @@ namespace Test_LISTED
                     string myLocalDatum = part.Substring(part.IndexOf("[") + 1, 11);
                     arrayPartDate.Add(myLocalDatum);
                 }
-                foreach (Object obj in arrayPart)
-                {
-                    if (n == 0)
-                    {
-                        this.richTextBox1.Text = obj.ToString();
-                    }
-                    if (n == 1)
-                    {
-                        this.richTextBox2.Text = obj.ToString();
-                    }
-                    if (n == 2)
-                    {
-                        this.richTextBox3.Text = obj.ToString();
-                    }
-                    if (n == 3)
-                    {
-                        this.richTextBox4.Text = obj.ToString();
-                    }
-                    if (n == 4)
-                    {
-                        this.richTextBox5.Text = obj.ToString();
-                    }
-                    n++;
-                }
-                n = 0;
 
-                foreach (Object obj in arrayPartDate)
-                {
-                    if (n == 0)
-                    {
-                        this.richTextBox6.Text = obj.ToString();
-                    }
-                    if (n == 1)
-                    {
-                        this.richTextBox7.Text = obj.ToString();
-                    }
-                    if (n == 2)
-                    {
-                        this.richTextBox8.Text = obj.ToString();
-                    }
-                    if (n == 3)
-                    {
-                        this.richTextBox9.Text = obj.ToString();
-                    }
-                    if (n == 4)
-                    {
-                        this.richTextBox10.Text = obj.ToString();
-                    }
-                    n++;
-                }
-
+                WriteCalendarNameFromDatabaseToTextBoxes(arrayPart);
+                WriteDateFromDatabaseToTextBoxes(arrayPartDate);
             }
             catch (System.ArgumentOutOfRangeException outofRange)
             {
