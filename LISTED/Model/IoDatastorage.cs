@@ -53,10 +53,16 @@ namespace Test_LISTED.Model
          */
         public string string_IoDataStorage_ReadDataFromStorage(string string_Path)
         {
-            /**/
-            string_Data = File.ReadAllText(Storage.s_PathTextfile); // string_Path);
-            Debug.WriteLine("Output Path: " + Storage.s_PathTextfile); // string_Path);
-            Debug.WriteLine("Output Data: " + string_Data);
+            try
+            {
+                string_Data = File.ReadAllText(Storage.s_PathTextfile); // string_Path);
+                                                                        //Debug.WriteLine("Output Path: " + Storage.s_PathTextfile); // string_Path);
+                                                                        //Debug.WriteLine("Output Data: " + string_Data);
+            }
+            catch (FileNotFoundException e)
+            {
+                Debug.WriteLine(e.Message);
+            }
             return string_Data;
         }
     }
