@@ -441,12 +441,6 @@ namespace Test_LISTED
             IoDatastorage mydatastorage = new IoDatastorage();
             string myInput = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
 
-            //if (mydatastorage.int_IoDatastorage_WriteDataToStorage(myInput, Storage.s_PathTextfile) != 1)
-            //{
-            //    /* if file was not found, print an error for the user  */
-            //    this.richTextBox3.Text = "An error occured.";
-            //}
-
             try
             {
                 /* try to print data from data storage to the gui */
