@@ -361,7 +361,6 @@ namespace Test_LISTED
                     string myLocalItem = part.Substring(0, part.IndexOf("["));
                     arrayPart.Add(myLocalItem);
                     string myLocalDatum = part.Substring(part.IndexOf("[") + 1, 11);
-                    //System.Diagnostics.Debug.WriteLine("HIER HIER HIER: " + part.Substring(part.IndexOf("[")) + " " + part.Substring(part.IndexOf("]")-1));
                     arrayPartDate.Add(myLocalDatum);
                 }
                 foreach (Object obj in arrayPart)
@@ -389,11 +388,7 @@ namespace Test_LISTED
                     n++;
                 }
                 n = 0;
-                //foreach(string part in myInput.Split("["))
-                //{
-                //    arrayPart.Clear();
-                //    arrayPart.Add(part.Substring(0, myInput.IndexOf("]")));
-                //}
+
                 foreach (Object obj in arrayPartDate)
                 {
                     if (n == 0)
