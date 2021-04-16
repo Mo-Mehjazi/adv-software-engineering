@@ -184,20 +184,6 @@ namespace Test_LISTED
             return;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form mySubForm = new Gui2();
-            mySubForm.ShowDialog();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            TabPage tabNew = new TabPage();
-            tabNew.Text = "New List";
-            tabNew.ImageIndex = this.tabControl1.TabPages.Count + 1;
-            this.tabControl1.TabPages.Add(tabNew);
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
