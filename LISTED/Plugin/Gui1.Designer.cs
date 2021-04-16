@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gui1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControlMain = new System.Windows.Forms.TabControl();
+            this.tabPageMain = new System.Windows.Forms.TabPage();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -70,8 +70,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtboxHlights1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabControlMain.SuspendLayout();
+            this.tabPageMain.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -104,39 +104,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btn_Save_Click);
             // 
-            // tabControl1
+            // tabControlMain
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(244, 388);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(535, 220);
-            this.tabControl1.TabIndex = 3;
+            this.tabControlMain.Controls.Add(this.tabPageMain);
+            this.tabControlMain.Location = new System.Drawing.Point(231, 410);
+            this.tabControlMain.Name = "tabControlMain";
+            this.tabControlMain.SelectedIndex = 0;
+            this.tabControlMain.Size = new System.Drawing.Size(535, 220);
+            this.tabControlMain.TabIndex = 3;
             // 
-            // tabPage1
+            // tabPageMain
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage1.Controls.Add(this.checkBox5);
-            this.tabPage1.Controls.Add(this.checkBox4);
-            this.tabPage1.Controls.Add(this.checkBox3);
-            this.tabPage1.Controls.Add(this.checkBox2);
-            this.tabPage1.Controls.Add(this.checkBox1);
-            this.tabPage1.Controls.Add(this.richTextBox10);
-            this.tabPage1.Controls.Add(this.richTextBox5);
-            this.tabPage1.Controls.Add(this.richTextBox9);
-            this.tabPage1.Controls.Add(this.richTextBox4);
-            this.tabPage1.Controls.Add(this.richTextBox8);
-            this.tabPage1.Controls.Add(this.richTextBox3);
-            this.tabPage1.Controls.Add(this.richTextBox7);
-            this.tabPage1.Controls.Add(this.richTextBox2);
-            this.tabPage1.Controls.Add(this.richTextBox6);
-            this.tabPage1.Controls.Add(this.richTextBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(527, 192);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "List 1";
+            this.tabPageMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPageMain.Controls.Add(this.checkBox5);
+            this.tabPageMain.Controls.Add(this.checkBox4);
+            this.tabPageMain.Controls.Add(this.checkBox3);
+            this.tabPageMain.Controls.Add(this.checkBox2);
+            this.tabPageMain.Controls.Add(this.checkBox1);
+            this.tabPageMain.Controls.Add(this.richTextBox10);
+            this.tabPageMain.Controls.Add(this.richTextBox5);
+            this.tabPageMain.Controls.Add(this.richTextBox9);
+            this.tabPageMain.Controls.Add(this.richTextBox4);
+            this.tabPageMain.Controls.Add(this.richTextBox8);
+            this.tabPageMain.Controls.Add(this.richTextBox3);
+            this.tabPageMain.Controls.Add(this.richTextBox7);
+            this.tabPageMain.Controls.Add(this.richTextBox2);
+            this.tabPageMain.Controls.Add(this.richTextBox6);
+            this.tabPageMain.Controls.Add(this.richTextBox1);
+            this.tabPageMain.Location = new System.Drawing.Point(4, 24);
+            this.tabPageMain.Name = "tabPageMain";
+            this.tabPageMain.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMain.Size = new System.Drawing.Size(527, 192);
+            this.tabPageMain.TabIndex = 0;
+            this.tabPageMain.Text = "Main";
             // 
             // checkBox5
             // 
@@ -592,7 +592,7 @@
             this.Controls.Add(this.lblHome);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.panelLeft);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -601,9 +601,9 @@
             this.Text = "LISTED";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Gui1_FormClosing_1);
             this.Load += new System.EventHandler(this.Gui1_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabControlMain.ResumeLayout(false);
+            this.tabPageMain.ResumeLayout(false);
+            this.tabPageMain.PerformLayout();
             this.panelLeft.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -624,8 +624,8 @@
 
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControlMain;
+        private System.Windows.Forms.TabPage tabPageMain;
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox logo;

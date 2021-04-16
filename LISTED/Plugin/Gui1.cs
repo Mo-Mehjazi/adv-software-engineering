@@ -202,12 +202,16 @@ namespace Test_LISTED
             pnlNav.Height = btnTodo.Height;
             pnlNav.Top = btnTodo.Top;
             btnTodo.BackColor = Color.FromArgb(0, 64, 64);
+            creatNewList();
+
+        }
+
+        private void creatNewList()
+        {
             TabPage tabNew = new TabPage();
             tabNew.Text = "New List";
-            
-            tabNew.ImageIndex = this.tabControl1.TabPages.Count + 1;
-            this.tabControl1.TabPages.Add(tabNew);
-
+            tabNew.ImageIndex = this.tabControlMain.TabPages.Count + 1;
+            this.tabControlMain.TabPages.Add(tabNew);
         }
 
         private void btnAlarm_Click(object sender, EventArgs e)
