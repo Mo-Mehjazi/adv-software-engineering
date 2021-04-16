@@ -95,7 +95,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(807, 361);
+            this.button1.Location = new System.Drawing.Point(807, 504);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 29);
@@ -441,7 +441,7 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(807, 12);
+            this.logo.Location = new System.Drawing.Point(744, 12);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(152, 100);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -466,7 +466,7 @@
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnX.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnX.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnX.Location = new System.Drawing.Point(943, 12);
+            this.btnX.Location = new System.Drawing.Point(871, 12);
             this.btnX.Name = "btnX";
             this.btnX.Size = new System.Drawing.Size(25, 25);
             this.btnX.TabIndex = 7;
@@ -587,7 +587,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(978, 665);
+            this.ClientSize = new System.Drawing.Size(916, 665);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnX);

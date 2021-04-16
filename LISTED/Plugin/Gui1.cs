@@ -37,7 +37,7 @@ namespace Test_LISTED
             pnlNav.Height = btnHome.Height;
             pnlNav.Top = btnHome.Top;
             pnlNav.Left = btnHome.Left;
-            btnHome.BackColor = Color.FromArgb(0, 64, 64);
+            btnHome.BackColor = Color.FromArgb(0, 80, 80);
             load_Database();
         }
 
@@ -257,30 +257,34 @@ namespace Test_LISTED
                 this.userLabel.Text = "User Name";
             }
         }
+        private void bg_Color(Button btn)
+        {
+            btn.BackColor = Color.FromArgb(0, 80, 80);
+        }
 
         private void btnHome_Leave(object sender, EventArgs e)
         {
-            btnHome.BackColor = Color.FromArgb(0, 80, 80);
+            bg_Color(btnHome);
         }
 
         private void btnTodo_Leave(object sender, EventArgs e)
         {
-            btnTodo.BackColor = Color.FromArgb(0, 80, 80);
+            bg_Color(btnTodo);
         }
 
         private void btnAlarm_Leave(object sender, EventArgs e)
         {
-            btnAlarm.BackColor = Color.FromArgb(0, 80, 80);
+            bg_Color(btnAlarm);
         }
 
         private void btnCal_Leave(object sender, EventArgs e)
         {
-            btnCal.BackColor = Color.FromArgb(0, 80, 80);
+            bg_Color(btnCal);
         }
 
         private void btnLogOut_Leave(object sender, EventArgs e)
         {
-            btnLogOut.BackColor = Color.FromArgb(0, 80, 80);
+            bg_Color(btnLogOut);
         }
 
         private void btnX_Click(object sender, EventArgs e)
