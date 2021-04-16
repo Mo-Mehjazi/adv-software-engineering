@@ -152,14 +152,14 @@ namespace Test_LISTED
         {
             /* Check if the text boxes are empty, if true fill the next in order with content from storage. */
 
-            if (this.richTextBox11.Text.Length == 0)
+            if (this.txtboxUpevent1.Text.Length == 0)
             {
-                this.richTextBox11.Text = Storage.myLocalName;
+                this.txtboxUpevent1.Text = Storage.myLocalName;
             }
 
-            else if (this.richTextBox12.Text.Length == 0)
+            else if (this.txtboxUpevent2.Text.Length == 0)
             {
-                this.richTextBox12.Text = Storage.myLocalName;
+                this.txtboxUpevent2.Text = Storage.myLocalName;
             }
 
             return;
@@ -184,17 +184,6 @@ namespace Test_LISTED
             return;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void Gui1_Load(object sender, EventArgs e)
         {
 
@@ -215,6 +204,7 @@ namespace Test_LISTED
             btnTodo.BackColor = Color.FromArgb(0, 64, 64);
             TabPage tabNew = new TabPage();
             tabNew.Text = "New List";
+            
             tabNew.ImageIndex = this.tabControl1.TabPages.Count + 1;
             this.tabControl1.TabPages.Add(tabNew);
 
@@ -451,20 +441,15 @@ namespace Test_LISTED
             return;
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            load_Database();
-        }
-
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.richTextBox13.Text.Length != 0)
+            if (this.txtboxHlights1.Text.Length != 0)
             {
-                this.richTextBox13.Text = this.richTextBox2.Text;
+                this.txtboxHlights1.Text = this.richTextBox2.Text;
             }
-            else if (this.richTextBox14.Text.Length != 0)
+            else if (this.txtboxHlights2.Text.Length != 0)
             {
-                this.richTextBox14.Text = this.richTextBox2.Text;
+                this.txtboxHlights2.Text = this.richTextBox2.Text;
             }
 
             return;
@@ -472,13 +457,13 @@ namespace Test_LISTED
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.richTextBox13.Text.Length != 0)
+            if (this.txtboxHlights1.Text.Length != 0)
             {
-                this.richTextBox13.Text = this.richTextBox3.Text;
+                this.txtboxHlights1.Text = this.richTextBox3.Text;
             }
-            else if (this.richTextBox14.Text.Length != 0)
+            else if (this.txtboxHlights2.Text.Length != 0)
             {
-                this.richTextBox14.Text = this.richTextBox3.Text;
+                this.txtboxHlights2.Text = this.richTextBox3.Text;
             }
 
             return;
@@ -486,13 +471,13 @@ namespace Test_LISTED
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.richTextBox13.Text.Length != 0)
+            if (this.txtboxHlights1.Text.Length != 0)
             {
-                this.richTextBox13.Text = this.richTextBox4.Text;
+                this.txtboxHlights1.Text = this.richTextBox4.Text;
             }
-            else if (this.richTextBox14.Text.Length != 0)
+            else if (this.txtboxHlights2.Text.Length != 0)
             {
-                this.richTextBox14.Text = this.richTextBox4.Text;
+                this.txtboxHlights2.Text = this.richTextBox4.Text;
             }
 
             return;
@@ -500,13 +485,13 @@ namespace Test_LISTED
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.richTextBox13.Text.Length != 0)
+            if (this.txtboxHlights1.Text.Length != 0)
             {
-                this.richTextBox13.Text = this.richTextBox5.Text;
+                this.txtboxHlights1.Text = this.richTextBox5.Text;
             }
-            else if (this.richTextBox14.Text.Length != 0)
+            else if (this.txtboxHlights2.Text.Length != 0)
             {
-                this.richTextBox14.Text = this.richTextBox5.Text;
+                this.txtboxHlights2.Text = this.richTextBox5.Text;
             }
 
             return;
@@ -516,27 +501,27 @@ namespace Test_LISTED
         {
             if (true == this.checkBox1.Checked)
             {
-                if (this.richTextBox13.Text.Length == 0)
+                if (this.txtboxHlights1.Text.Length == 0)
                 {
-                    this.richTextBox13.Text = this.richTextBox1.Text;
+                    this.txtboxHlights1.Text = this.richTextBox1.Text;
                     return;
                 }
-                else if (this.richTextBox14.Text.Length == 0)
+                else if (this.txtboxHlights2.Text.Length == 0)
                 {
-                    this.richTextBox14.Text = this.richTextBox1.Text;
+                    this.txtboxHlights2.Text = this.richTextBox1.Text;
                     return;
                 }
             }
             else
             {
-                if(this.richTextBox13.Text == this.richTextBox1.Text)
+                if(this.txtboxHlights1.Text == this.richTextBox1.Text)
                 {
-                    this.richTextBox13.Text = "";
+                    this.txtboxHlights1.Text = "";
                     return;
                 }
-                else if(this.richTextBox14.Text == this.richTextBox1.Text)
+                else if(this.txtboxHlights2.Text == this.richTextBox1.Text)
                 {
-                    this.richTextBox14.Text = "";
+                    this.txtboxHlights2.Text = "";
                     return;
                 }
             }
@@ -548,27 +533,27 @@ namespace Test_LISTED
         {
             if (true == this.checkBox2.Checked)
             {
-                if (this.richTextBox13.Text.Length == 0)
+                if (this.txtboxHlights1.Text.Length == 0)
                 {
-                    this.richTextBox13.Text = this.richTextBox2.Text;
+                    this.txtboxHlights1.Text = this.richTextBox2.Text;
                     return;
                 }
-                else if (this.richTextBox14.Text.Length == 0)
+                else if (this.txtboxHlights2.Text.Length == 0)
                 {
-                    this.richTextBox14.Text = this.richTextBox2.Text;
+                    this.txtboxHlights2.Text = this.richTextBox2.Text;
                     return;
                 }
             }
             else
             {
-                if (this.richTextBox13.Text == this.richTextBox2.Text)
+                if (this.txtboxHlights1.Text == this.richTextBox2.Text)
                 {
-                    this.richTextBox13.Text = "";
+                    this.txtboxHlights1.Text = "";
                     return;
                 }
-                else if (this.richTextBox14.Text == this.richTextBox2.Text)
+                else if (this.txtboxHlights2.Text == this.richTextBox2.Text)
                 {
-                    this.richTextBox14.Text = "";
+                    this.txtboxHlights2.Text = "";
                     return;
                 }
             }
@@ -580,27 +565,27 @@ namespace Test_LISTED
         {
             if (true == this.checkBox3.Checked)
             {
-                if (this.richTextBox13.Text.Length == 0)
+                if (this.txtboxHlights1.Text.Length == 0)
                 {
-                    this.richTextBox13.Text = this.richTextBox3.Text;
+                    this.txtboxHlights1.Text = this.richTextBox3.Text;
                     return;
                 }
-                else if (this.richTextBox14.Text.Length == 0)
+                else if (this.txtboxHlights2.Text.Length == 0)
                 {
-                    this.richTextBox14.Text = this.richTextBox3.Text;
+                    this.txtboxHlights2.Text = this.richTextBox3.Text;
                     return;
                 }
             }
             else
             {
-                if (this.richTextBox13.Text == this.richTextBox3.Text)
+                if (this.txtboxHlights1.Text == this.richTextBox3.Text)
                 {
-                    this.richTextBox13.Text = "";
+                    this.txtboxHlights1.Text = "";
                     return;
                 }
-                else if (this.richTextBox14.Text == this.richTextBox3.Text)
+                else if (this.txtboxHlights2.Text == this.richTextBox3.Text)
                 {
-                    this.richTextBox14.Text = "";
+                    this.txtboxHlights2.Text = "";
                     return;
                 }
             }
@@ -612,27 +597,27 @@ namespace Test_LISTED
         {
             if (true == this.checkBox4.Checked)
             {
-                if (this.richTextBox13.Text.Length == 0)
+                if (this.txtboxHlights1.Text.Length == 0)
                 {
-                    this.richTextBox13.Text = this.richTextBox4.Text;
+                    this.txtboxHlights1.Text = this.richTextBox4.Text;
                     return;
                 }
-                else if (this.richTextBox14.Text.Length == 0)
+                else if (this.txtboxHlights2.Text.Length == 0)
                 {
-                    this.richTextBox14.Text = this.richTextBox4.Text;
+                    this.txtboxHlights2.Text = this.richTextBox4.Text;
                     return;
                 }
             }
             else
             {
-                if (this.richTextBox13.Text == this.richTextBox4.Text)
+                if (this.txtboxHlights1.Text == this.richTextBox4.Text)
                 {
-                    this.richTextBox13.Text = "";
+                    this.txtboxHlights1.Text = "";
                     return;
                 }
-                else if (this.richTextBox14.Text == this.richTextBox4.Text)
+                else if (this.txtboxHlights2.Text == this.richTextBox4.Text)
                 {
-                    this.richTextBox14.Text = "";
+                    this.txtboxHlights2.Text = "";
                     return;
                 }
             }
@@ -644,27 +629,27 @@ namespace Test_LISTED
         {
             if (true == this.checkBox5.Checked)
             {
-                if (this.richTextBox13.Text.Length == 0)
+                if (this.txtboxHlights1.Text.Length == 0)
                 {
-                    this.richTextBox13.Text = this.richTextBox5.Text;
+                    this.txtboxHlights1.Text = this.richTextBox5.Text;
                     return;
                 }
-                else if (this.richTextBox14.Text.Length == 0)
+                else if (this.txtboxHlights2.Text.Length == 0)
                 {
-                    this.richTextBox14.Text = this.richTextBox5.Text;
+                    this.txtboxHlights2.Text = this.richTextBox5.Text;
                     return;
                 }
             }
             else
             {
-                if (this.richTextBox13.Text == this.richTextBox5.Text)
+                if (this.txtboxHlights1.Text == this.richTextBox5.Text)
                 {
-                    this.richTextBox13.Text = "";
+                    this.txtboxHlights1.Text = "";
                     return;
                 }
-                else if (this.richTextBox14.Text == this.richTextBox5.Text)
+                else if (this.txtboxHlights2.Text == this.richTextBox5.Text)
                 {
-                    this.richTextBox14.Text = "";
+                    this.txtboxHlights2.Text = "";
                     return;
                 }
             }

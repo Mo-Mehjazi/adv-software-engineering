@@ -61,14 +61,14 @@
             this.lblHome = new System.Windows.Forms.Label();
             this.btnX = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox12 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox11 = new System.Windows.Forms.RichTextBox();
+            this.txtboxUpevent2 = new System.Windows.Forms.RichTextBox();
+            this.txtboxUpevent1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblEvents = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.richTextBox14 = new System.Windows.Forms.RichTextBox();
+            this.txtboxHlights2 = new System.Windows.Forms.RichTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.richTextBox13 = new System.Windows.Forms.RichTextBox();
+            this.txtboxHlights1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -426,7 +426,6 @@
             this.userLabel.Size = new System.Drawing.Size(74, 15);
             this.userLabel.TabIndex = 1;
             this.userLabel.Text = "User Name";
-            this.userLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -447,7 +446,6 @@
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblHome
             // 
@@ -477,8 +475,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.richTextBox12);
-            this.panel2.Controls.Add(this.richTextBox11);
+            this.panel2.Controls.Add(this.txtboxUpevent2);
+            this.panel2.Controls.Add(this.txtboxUpevent1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.lblEvents);
             this.panel2.Location = new System.Drawing.Point(215, 190);
@@ -486,25 +484,25 @@
             this.panel2.Size = new System.Drawing.Size(264, 148);
             this.panel2.TabIndex = 8;
             // 
-            // richTextBox12
+            // txtboxUpevent2
             // 
-            this.richTextBox12.Enabled = false;
-            this.richTextBox12.Location = new System.Drawing.Point(16, 100);
-            this.richTextBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox12.Name = "richTextBox12";
-            this.richTextBox12.Size = new System.Drawing.Size(227, 20);
-            this.richTextBox12.TabIndex = 3;
-            this.richTextBox12.Text = "";
+            this.txtboxUpevent2.Enabled = false;
+            this.txtboxUpevent2.Location = new System.Drawing.Point(16, 100);
+            this.txtboxUpevent2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxUpevent2.Name = "txtboxUpevent2";
+            this.txtboxUpevent2.Size = new System.Drawing.Size(227, 20);
+            this.txtboxUpevent2.TabIndex = 3;
+            this.txtboxUpevent2.Text = "";
             // 
-            // richTextBox11
+            // txtboxUpevent1
             // 
-            this.richTextBox11.Enabled = false;
-            this.richTextBox11.Location = new System.Drawing.Point(16, 67);
-            this.richTextBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox11.Name = "richTextBox11";
-            this.richTextBox11.Size = new System.Drawing.Size(227, 20);
-            this.richTextBox11.TabIndex = 2;
-            this.richTextBox11.Text = "";
+            this.txtboxUpevent1.Enabled = false;
+            this.txtboxUpevent1.Location = new System.Drawing.Point(16, 67);
+            this.txtboxUpevent1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxUpevent1.Name = "txtboxUpevent1";
+            this.txtboxUpevent1.Size = new System.Drawing.Size(227, 20);
+            this.txtboxUpevent1.TabIndex = 2;
+            this.txtboxUpevent1.Text = "";
             // 
             // pictureBox1
             // 
@@ -531,24 +529,24 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel3.Controls.Add(this.richTextBox14);
+            this.panel3.Controls.Add(this.txtboxHlights2);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.richTextBox13);
+            this.panel3.Controls.Add(this.txtboxHlights1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(521, 190);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(264, 148);
             this.panel3.TabIndex = 8;
             // 
-            // richTextBox14
+            // txtboxHlights2
             // 
-            this.richTextBox14.Enabled = false;
-            this.richTextBox14.Location = new System.Drawing.Point(16, 100);
-            this.richTextBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox14.Name = "richTextBox14";
-            this.richTextBox14.Size = new System.Drawing.Size(227, 20);
-            this.richTextBox14.TabIndex = 3;
-            this.richTextBox14.Text = "";
+            this.txtboxHlights2.Enabled = false;
+            this.txtboxHlights2.Location = new System.Drawing.Point(16, 100);
+            this.txtboxHlights2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxHlights2.Name = "txtboxHlights2";
+            this.txtboxHlights2.Size = new System.Drawing.Size(227, 20);
+            this.txtboxHlights2.TabIndex = 3;
+            this.txtboxHlights2.Text = "";
             // 
             // pictureBox3
             // 
@@ -561,15 +559,15 @@
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // richTextBox13
+            // txtboxHlights1
             // 
-            this.richTextBox13.Enabled = false;
-            this.richTextBox13.Location = new System.Drawing.Point(16, 67);
-            this.richTextBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox13.Name = "richTextBox13";
-            this.richTextBox13.Size = new System.Drawing.Size(227, 20);
-            this.richTextBox13.TabIndex = 2;
-            this.richTextBox13.Text = "";
+            this.txtboxHlights1.Enabled = false;
+            this.txtboxHlights1.Location = new System.Drawing.Point(16, 67);
+            this.txtboxHlights1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxHlights1.Name = "txtboxHlights1";
+            this.txtboxHlights1.Size = new System.Drawing.Size(227, 20);
+            this.txtboxHlights1.TabIndex = 2;
+            this.txtboxHlights1.Text = "";
             // 
             // label1
             // 
@@ -656,10 +654,10 @@
         private System.Windows.Forms.RichTextBox richTextBox8;
         private System.Windows.Forms.RichTextBox richTextBox7;
         private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.RichTextBox richTextBox12;
-        private System.Windows.Forms.RichTextBox richTextBox11;
-        private System.Windows.Forms.RichTextBox richTextBox14;
-        private System.Windows.Forms.RichTextBox richTextBox13;
+        private System.Windows.Forms.RichTextBox txtboxUpevent2;
+        private System.Windows.Forms.RichTextBox txtboxUpevent1;
+        private System.Windows.Forms.RichTextBox txtboxHlights2;
+        private System.Windows.Forms.RichTextBox txtboxHlights1;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
