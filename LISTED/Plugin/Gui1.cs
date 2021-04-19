@@ -13,6 +13,7 @@ using System.Runtime.InteropServices;
 using Test_LISTED.Controller;
 using System.IO;
 using System.Collections.Generic;
+using Test_LISTED.Adapter;
 
 namespace Test_LISTED
 {
@@ -39,6 +40,9 @@ namespace Test_LISTED
             pnlNav.Left = btnHome.Left;
             btnHome.BackColor = Color.FromArgb(0, 80, 80);
             load_Database();
+            GuiReaction myGuiReaction = new GuiReaction();
+            GetGuiReaction myGetGuiReaction = new GetGuiReaction();
+            myGetGuiReaction.Subscribe(myGuiReaction);
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
