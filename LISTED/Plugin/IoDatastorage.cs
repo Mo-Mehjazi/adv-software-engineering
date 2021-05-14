@@ -83,5 +83,7 @@ namespace Test_LISTED.Model
         public static int Count;
 
         public static string string_WriteIntoDatabase;
+
+        public static Gui1 myGui1 = new Gui1();
     }
 }

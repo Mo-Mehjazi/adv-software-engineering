@@ -43,7 +43,11 @@ namespace Test_LISTED.View
             Storage.myLocalName = this.txtName.Text;
             Storage.myLocalDescription = this.txtBeschreibung.Text;
             Storage.myLocalAlarm = this.cbWecker.Checked;
+
             
+            Storage.myGui1.btn_Save_Click(sender, e);
+
+
             this.Close();
         }
 

@@ -27,7 +27,7 @@ namespace Test_LISTED
         [STAThread]
         static void Main()
         {
-            Storage myStorage = new Storage();
+            
             ControlGui1 myControlGui1 = new ControlGui1();
         }
     }

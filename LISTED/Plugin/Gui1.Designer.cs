@@ -319,7 +319,7 @@
             this.btnCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCal.ForeColor = System.Drawing.Color.Green;
-            this.btnCal.Image = ((System.Drawing.Image)(resources.GetObject("btnCal.Image")));
+            //this.btnCal.Image = ((System.Drawing.Image)(resources.GetObject("btnCal.Image")));
             this.btnCal.Location = new System.Drawing.Point(0, 340);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(186, 50);
@@ -338,7 +338,7 @@
             this.btnAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlarm.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAlarm.ForeColor = System.Drawing.Color.Green;
-            this.btnAlarm.Image = ((System.Drawing.Image)(resources.GetObject("btnAlarm.Image")));
+            //this.btnAlarm.Image = ((System.Drawing.Image)(resources.GetObject("btnAlarm.Image")));
             this.btnAlarm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlarm.Location = new System.Drawing.Point(0, 290);
             this.btnAlarm.Name = "btnAlarm";
@@ -358,7 +358,7 @@
             this.btnTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTodo.ForeColor = System.Drawing.Color.Green;
-            this.btnTodo.Image = ((System.Drawing.Image)(resources.GetObject("btnTodo.Image")));
+            //this.btnTodo.Image = ((System.Drawing.Image)(resources.GetObject("btnTodo.Image")));
             this.btnTodo.Location = new System.Drawing.Point(0, 240);
             this.btnTodo.Name = "btnTodo";
             this.btnTodo.Size = new System.Drawing.Size(186, 50);
@@ -377,7 +377,7 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.ForeColor = System.Drawing.Color.Green;
-            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
+            //this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.Location = new System.Drawing.Point(0, 605);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(186, 60);
@@ -396,7 +396,7 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.Green;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            //this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.Location = new System.Drawing.Point(0, 190);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(186, 50);
@@ -429,7 +429,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            //this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(54, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(75, 75);
@@ -439,7 +439,7 @@
             // 
             // logo
             // 
-            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
+            //this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
             this.logo.Location = new System.Drawing.Point(744, 12);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(152, 100);
@@ -507,7 +507,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            //this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
@@ -551,7 +551,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            //this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(16, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);

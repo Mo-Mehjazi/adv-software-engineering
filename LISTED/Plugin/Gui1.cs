@@ -47,21 +47,10 @@ namespace Test_LISTED
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            Movie movie = new Movie
-            {
-                Name = "Bad Boys",
-                Year = 1995
-            };
-
-            /* serialize JSON to a string and then write string to a file */
-            System.IO.File.WriteAllText("~\\..\\..\\..\\..\\Model\\UserLogin.txt", JsonConvert.SerializeObject(movie));
-
-            /* serialize JSON directly to a file */
-            using (System.IO.StreamWriter file = System.IO.File.CreateText("~\\..\\..\\..\\..\\Model\\UserLogin.txt"))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, movie);
-            }
+        //    /* Part of Observer Pattern on TextBoxLeave */
+        //    btn_Save_Click(sender, e);
+        //
+            return;
         }
 
         private void WriteContentIntoTextboxes()
@@ -169,7 +158,7 @@ namespace Test_LISTED
             return;
         }
 
-        private void btn_Save_Click(object sender, EventArgs e)
+        public void btn_Save_Click(object sender, EventArgs e)
         {
             /* Write content to Gui (1), into data storage (2) and check if date is today to write it to another text box (3). */
 

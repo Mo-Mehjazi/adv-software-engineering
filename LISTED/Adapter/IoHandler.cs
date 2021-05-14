@@ -164,7 +164,10 @@ namespace Test_LISTED.Controller
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Gui1());
+            //Application.Run(new Gui1());
+            Storage myStorage = new Storage();
+
+            Application.Run(Storage.myGui1);
         }
     }
 }
