@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<svg width="748" height="197" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <polygon points="4,193 4,4 744,4 744,193 4,193" stroke="#fffffe00" fill="none"/>
+ <polygon points="24,111 31,111 49,111 76,111 109,111 145,111 181,111 214,111 241,111 259,111 266,111 268,111 270,110 271,110 273,109 274,107 276,106 277,104 277,103 278,101 278,99 278,98 278,94 278,89 278,82 278,76 278,69 278,62 278,57 278,53 278,52 278,50 277,48 277,47 276,45 274,44 273,42 271,41 270,41 268,40 266,40 259,40 241,40 214,40 181,40 145,40 109,40 76,40 49,40 31,40 24,40 22,40 20,41 19,41 17,42 16,44 14,45 13,47 13,48 12,50 12,52 12,53 12,57 12,62 12,69 12,76 12,82 12,89 12,94 12,98 12,99 12,101 13,103 13,104 14,106 16,107 17,109 19,110 20,110 22,111 24,111" stroke="#afd870" fill="none"/>
+ <text x="75" y="55" fill="#afd870" font-family="Arial" font-size="12">Directory Structure ▷</text>
+ <polygon points="270,76 190,76 187,79 187,103 267,103 270,100 270,76" stroke="#90c4e4" fill="#1976d2"/>
+ <polyline points="267,79 187,79" stroke="#90c4e4" fill="none"/>
+ <polyline points="267,79 267,103" stroke="#90c4e4" fill="none"/>
+ <polyline points="267,79 270,76" stroke="#90c4e4" fill="none"/>
+ <text x="196" y="91" fill="#ffffff" font-family="Arial" font-size="12">▶ Plugin ▶</text>
+ <polygon points="115,76 23,76 20,79 20,103 112,103 115,100 115,76" stroke="#90c4e4" fill="none"/>
+ <polyline points="112,79 20,79" stroke="#90c4e4" fill="none"/>
+ <polyline points="112,79 112,103" stroke="#90c4e4" fill="none"/>
+ <polyline points="112,79 115,76" stroke="#90c4e4" fill="none"/>
+ <text x="29" y="91" fill="#000000" font-family="Arial" font-size="12">▶ Adapter ▷</text>
+ <polyline points="122,89 128,89 134,89 140,89 146,89 152,89 157,89 163,89 169,89 175,89 181,89" stroke="#cd0000" fill="none"/>
+ <polygon points="181,89 184,91 187,89 184,87 181,89" stroke="#cd0000" fill="#cd0000"/>
+ <polygon points="121,89 118,87 115,89 118,91 121,89" stroke="#cd0000" fill="#cd0000"/>
+ <polygon points="744,10 637,10 634,13 634,37 741,37 744,34 744,10" stroke="#90c4e4" fill="none"/>
+ <polyline points="741,13 634,13" stroke="#90c4e4" fill="none"/>
+ <polyline points="741,13 741,37" stroke="#90c4e4" fill="none"/>
+ <polyline points="741,13 744,10" stroke="#90c4e4" fill="none"/>
+ <text x="642" y="25" fill="#000000" font-family="Arial" font-size="12">▷ mscorlib.dll </text>
+ <polyline points="246,76 253,71 260,65 268,59 277,52 287,46 298,40 308,35 319,29 331,25 342,21 372,14 402,9 433,6 464,4 495,4 525,4 554,6 581,8 606,10 628,13" stroke="#4e8cb9" fill="none"/>
+ <polygon points="629,12 634,14 629,15 629,12" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="489,31 419,31 416,34 416,58 486,58 489,55 489,31" stroke="#90c4e4" fill="none"/>
+ <polyline points="486,34 416,34" stroke="#90c4e4" fill="none"/>
+ <polyline points="486,34 486,58" stroke="#90c4e4" fill="none"/>
+ <polyline points="486,34 489,31" stroke="#90c4e4" fill="none"/>
+ <text x="424" y="46" fill="#000000" font-family="Arial" font-size="12">▷ Gui1 ▷</text>
+ <polyline points="270,81 277,80 284,78 291,77 298,75 305,74 313,72 320,71 327,69 335,68 342,66 349,65 356,63 363,62 370,61 377,60 384,58 391,57 397,56 404,54 410,53" stroke="#4e8cb9" fill="none"/>
+ <polygon points="410,51 415,52 411,54 410,51" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="535,76 373,76 370,79 370,103 532,103 535,100 535,76" stroke="#90c4e4" fill="none"/>
+ <polyline points="532,79 370,79" stroke="#90c4e4" fill="none"/>
+ <polyline points="532,79 532,103" stroke="#90c4e4" fill="none"/>
+ <polyline points="532,79 535,76" stroke="#90c4e4" fill="none"/>
+ <text x="378" y="91" fill="#000000" font-family="Arial" font-size="12">▶ System.Drawing.dll </text>
+ <polyline points="270,89 278,89 287,89 296,89 305,89 315,89 325,89 334,89 344,89 354,89 364,89" stroke="#4e8cb9" fill="none"/>
+ <polygon points="364,88 369,89 364,91 364,88" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="562,121 345,121 342,124 342,148 559,148 562,145 562,121" stroke="#90c4e4" fill="none"/>
+ <polyline points="559,124 342,124" stroke="#90c4e4" fill="none"/>
+ <polyline points="559,124 559,148" stroke="#90c4e4" fill="none"/>
+ <polyline points="559,124 562,121" stroke="#90c4e4" fill="none"/>
+ <text x="350" y="136" fill="#000000" font-family="Arial" font-size="12">▶ System.Windows.Forms.dll </text>
+ <polyline points="270,98 277,99 284,101 291,102 298,104 305,105 313,106 320,108 327,109 335,111 342,112 346,113 349,114 353,114 356,115 360,116 364,117 368,118 371,118 375,119 379,120" stroke="#4e8cb9" fill="none"/>
+ <polygon points="379,118 384,121 379,122 379,118" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="504,166 404,166 401,169 401,193 501,193 504,190 504,166" stroke="#90c4e4" fill="none"/>
+ <polyline points="501,169 401,169" stroke="#90c4e4" fill="none"/>
+ <polyline points="501,169 501,193" stroke="#90c4e4" fill="none"/>
+ <polyline points="501,169 504,166" stroke="#90c4e4" fill="none"/>
+ <text x="409" y="181" fill="#000000" font-family="Arial" font-size="12">▷ System.dll </text>
+ <polyline points="248,103 255,108 262,114 271,119 280,125 289,131 299,137 310,143 320,148 331,153 342,157 347,159 352,161 358,163 363,164 369,166 374,167 379,169 385,170 390,171 395,172" stroke="#4e8cb9" fill="none"/>
+ <polygon points="396,170 400,173 395,174 396,170" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polyline points="489,41 501,40 513,39 527,38 541,37 556,35 571,34 586,33 601,31 615,30 629,29" stroke="#4e8cb9" fill="none"/>
+ <polygon points="628,27 634,28 629,31 628,27" stroke="#4e8cb9" fill="#4e8cb9"/>
+</svg>
