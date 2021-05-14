@@ -35,7 +35,7 @@ namespace Test_LISTED.View
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Speichern_Click(object sender, EventArgs e)
         {
             /* button to save calendar date */
             Storage.Count = Storage.Count + 1;

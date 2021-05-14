@@ -106,7 +106,7 @@
             this.btnSpeichern.TabIndex = 7;
             this.btnSpeichern.Text = "Speichern";
             this.btnSpeichern.UseVisualStyleBackColor = true;
-            this.btnSpeichern.Click += new System.EventHandler(this.button1_Click);
+            this.btnSpeichern.Click += new System.EventHandler(this.btn_Speichern_Click);
             // 
             // btnAbbrechen
             // 
