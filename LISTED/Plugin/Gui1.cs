@@ -40,18 +40,18 @@ namespace Test_LISTED
             pnlNav.Left = btnHome.Left;
             btnHome.BackColor = Color.FromArgb(0, 80, 80);
             load_Database();
-            GuiReaction myGuiReaction = new GuiReaction();
-            GetGuiReaction myGetGuiReaction = new GetGuiReaction();
-            myGetGuiReaction.Subscribe(myGuiReaction);
+            //GuiReaction myGuiReaction = new GuiReaction();
+            //GetGuiReaction myGetGuiReaction = new GetGuiReaction();
+            //myGetGuiReaction.Subscribe(myGuiReaction);
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
+        //private void richTextBox1_TextChanged(object sender, EventArgs e)
+        //{
         //    /* Part of Observer Pattern on TextBoxLeave */
         //    btn_Save_Click(sender, e);
         //
-            return;
-        }
+        //    return;
+        //}
 
         private void WriteContentIntoTextboxes()
         {
