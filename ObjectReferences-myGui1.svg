@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<svg width="699" height="240" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <polygon points="4,236 4,3 696,3 696,236 4,236" stroke="#fffffe00" fill="none"/>
+ <ellipse cx="352" cy="120" rx="192" ry="18" stroke="#000000" fill="none"/>
+ <text x="224" y="121" fill="#000000" font-family="Arial" font-size="12">Test_LISTED.Model.Storage.myGui1</text>
+ <polygon points="345,192 4,192 4,236 345,236 345,192" stroke="#90c4e4" fill="none"/>
+ <text x="13" y="207" fill="#000000" font-family="Arial" font-size="12">Test_LISTED.Adapter.ControlGui1.ControlGui1</text>
+ <text x="114" y="225" fill="#000000" font-family="Arial" font-size="12">IoHandler.cs(170)</text>
+ <polyline points="319,138 311,142 302,147 292,152 283,157 273,162 263,167 253,172 243,177 233,182 224,187" stroke="#4e8cb9" fill="none"/>
+ <text x="280" y="167" fill="#000000" font-family="Arial" font-size="12">Use</text>
+ <polygon points="225,190 215,192 222,184 225,190" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="696,192 364,192 364,236 696,236 696,192" stroke="#90c4e4" fill="none"/>
+ <text x="372" y="207" fill="#000000" font-family="Arial" font-size="12">Test_LISTED.View.Gui2.btn_Speichern_Click</text>
+ <text x="490" y="225" fill="#000000" font-family="Arial" font-size="12">Gui2.cs(48)</text>
+ <polyline points="385,138 393,142 402,147 411,152 421,157 431,162 441,167 451,172 461,177 471,182 480,187" stroke="#4e8cb9" fill="none"/>
+ <text x="451" y="167" fill="#000000" font-family="Arial" font-size="12">Use</text>
+ <polygon points="482,184 489,192 478,190 482,184" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="459,3 244,3 244,47 459,47 459,3" stroke="#000000" fill="none"/>
+ <text x="253" y="18" fill="#000000" font-family="Arial" font-size="12">Test_LISTED.Model.Storage</text>
+ <text x="279" y="36" fill="#000000" font-family="Arial" font-size="12">IoDatastorage.cs(87)</text>
+ <polyline points="352,48 352,52 352,56 352,60 352,64 352,69 352,73 352,78 352,82 352,87 352,91" stroke="#569f38" fill="none"/>
+ <text x="352" y="76" fill="#000000" font-family="Arial" font-size="12">Init</text>
+ <polygon points="355,91 352,101 348,91 355,91" stroke="#569f38" fill="#569f38"/>
+</svg>
