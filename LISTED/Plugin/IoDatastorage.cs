@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
 using System.IO;
@@ -33,8 +31,8 @@ namespace Test_LISTED.Model
             /* Write given string_Data into file at string_Path. */
             try
             {
-                File.WriteAllText(string_Path, string_Data);
-                //File.AppendAllText(string_Path, string_Data);
+                //File.WriteAllText(string_Path, string_Data);
+                File.AppendAllText(string_Path, string_Data);
             }
             catch(FileNotFoundException e)
             {
@@ -63,27 +61,5 @@ namespace Test_LISTED.Model
             }
             return string_Data;
         }
-    }
-
-    class Storage
-    {
-        /* storage paths */
-        public static string s_PathTextfile = "..\\..\\..\\Plugin\\DataStorage.txt";
-        public static string s_PathExcelfile;
-        public static string s_PathDatabase;
-        private static int[] ai_TabsList = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
-        public LinkedList<int> ll_Tabs = new LinkedList<int>(ai_TabsList);
-
-        public static DateTime myLocalDate;
-        public static string myLocalName;
-        public static string myLocalDescription;
-        public static bool myLocalAlarm;
-
-        public static int Count;
-
-        public static string string_WriteIntoDatabase;
-
-        public static Gui1 myGui1 = new Gui1();
     }
 }

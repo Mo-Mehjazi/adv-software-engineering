@@ -68,6 +68,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtboxHlights1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageMain.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -296,6 +297,7 @@
             this.btnCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCal.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCal.ForeColor = System.Drawing.Color.Green;
+            this.btnCal.Image = global::LISTED.Properties.Resources.calendar;
             this.btnCal.Location = new System.Drawing.Point(0, 340);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(186, 50);
@@ -314,6 +316,7 @@
             this.btnAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlarm.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAlarm.ForeColor = System.Drawing.Color.Green;
+            this.btnAlarm.Image = global::LISTED.Properties.Resources.alarm_clock;
             this.btnAlarm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlarm.Location = new System.Drawing.Point(0, 290);
             this.btnAlarm.Name = "btnAlarm";
@@ -333,6 +336,7 @@
             this.btnTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTodo.ForeColor = System.Drawing.Color.Green;
+            this.btnTodo.Image = global::LISTED.Properties.Resources.clipboard;
             this.btnTodo.Location = new System.Drawing.Point(0, 240);
             this.btnTodo.Name = "btnTodo";
             this.btnTodo.Size = new System.Drawing.Size(186, 50);
@@ -351,6 +355,7 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.ForeColor = System.Drawing.Color.Green;
+            this.btnLogOut.Image = global::LISTED.Properties.Resources.logout;
             this.btnLogOut.Location = new System.Drawing.Point(0, 605);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(186, 60);
@@ -369,6 +374,7 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.Green;
+            this.btnHome.Image = global::LISTED.Properties.Resources.home;
             this.btnHome.Location = new System.Drawing.Point(0, 190);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(186, 50);
@@ -401,6 +407,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::LISTED.Properties.Resources.user;
             this.pictureBox2.Location = new System.Drawing.Point(54, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(75, 75);
@@ -410,6 +417,7 @@
             // 
             // logo
             // 
+            this.logo.Image = global::LISTED.Properties.Resources.apple_touch_icon;
             this.logo.Location = new System.Drawing.Point(744, 12);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(152, 100);
@@ -477,6 +485,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::LISTED.Properties.Resources.Upevent;
             this.pictureBox1.Location = new System.Drawing.Point(16, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
@@ -520,6 +529,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = global::LISTED.Properties.Resources.Highlights;
             this.pictureBox3.Location = new System.Drawing.Point(16, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
@@ -548,12 +558,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tasks Highlights";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(631, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Gui1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(916, 665);
+            this.ClientSize = new System.Drawing.Size(907, 665);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnX);
@@ -629,6 +650,7 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

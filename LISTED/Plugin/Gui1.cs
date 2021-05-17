@@ -13,7 +13,8 @@ using System.Runtime.InteropServices;
 using Test_LISTED.Controller;
 using System.IO;
 using System.Collections.Generic;
-using Test_LISTED.Adapter;
+
+//using Test_LISTED.Adapter;
 
 namespace Test_LISTED
 {
@@ -57,7 +58,7 @@ namespace Test_LISTED
         {
             /* Write the content as given from count into the next empty textbox. */
 
-            switch(Storage.Count)
+            switch (Storage.Count)
             {
                 case 1:
                     if ((this.richTextBox1.Text.Length == 0))
@@ -141,7 +142,7 @@ namespace Test_LISTED
             return myInput;
         }
 
-        private void WriteContentIntoEmptyRichTextBox ()
+        private void WriteContentIntoEmptyRichTextBox()
         {
             /* Check if the text boxes are empty, if true fill the next in order with content from storage. */
 
@@ -166,7 +167,7 @@ namespace Test_LISTED
             DateTime dateTime = new DateTime();
 
             WriteContentIntoTextboxes(); /* 1 */
-            
+
             myModel.int_IoDatastorage_WriteDataToStorage(FormalizeContentToString(), Storage.s_PathTextfile); /* 2 */
 
             if ((Storage.myLocalAlarm) && (0 != (DateTime.Compare(Storage.myLocalDate.Date, dateTime.Date)))) /* 3 */
@@ -233,10 +234,10 @@ namespace Test_LISTED
                 this.btnLogOut.Text = "Log out!";
 
                 string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-                
-                string myName = username.Substring(username.IndexOf("\\")+1);
+
+                string myName = username.Substring(username.IndexOf("\\") + 1);
                 this.userLabel.Text = myName;
-                
+
             }
             else
             {
@@ -347,7 +348,7 @@ namespace Test_LISTED
                 {
                     this.richTextBox5.Text = obj.ToString();
                 }
-            n++;
+                n++;
             }
 
             return;
@@ -429,7 +430,7 @@ namespace Test_LISTED
             {
                 System.Diagnostics.Debug.WriteLine(outofRange.Message);
             }
-            catch(FileNotFoundException e)
+            catch (FileNotFoundException e)
             {
                 this.richTextBox3.Text = "An error occured.";
                 System.Diagnostics.Debug.WriteLine(e.Message);
@@ -511,12 +512,12 @@ namespace Test_LISTED
             }
             else
             {
-                if(this.txtboxHlights1.Text == this.richTextBox1.Text)
+                if (this.txtboxHlights1.Text == this.richTextBox1.Text)
                 {
                     this.txtboxHlights1.Text = "";
                     return;
                 }
-                else if(this.txtboxHlights2.Text == this.richTextBox1.Text)
+                else if (this.txtboxHlights2.Text == this.richTextBox1.Text)
                 {
                     this.txtboxHlights2.Text = "";
                     return;
@@ -652,6 +653,16 @@ namespace Test_LISTED
             }
 
             return;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //String myString = "Das ist ein Text.";
+            //InputHandler myInputHandler = new InputHandler();
+            //string string_MyResult1 = myInputHandler.int_InputHandler_VerifyUserInput(myString);
+            //Console.WriteLine(string_MyResult1);
+            //Console.ReadLine();
+
         }
     }
 }
