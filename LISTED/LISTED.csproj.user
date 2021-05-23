@@ -8,5 +8,8 @@
     <Compile Update="Plugin\Gui2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Plugin\GuiAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

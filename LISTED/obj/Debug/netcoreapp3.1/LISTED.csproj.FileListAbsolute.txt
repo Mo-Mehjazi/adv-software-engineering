@@ -25,6 +25,7 @@ C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\bin\Debug\netcor
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\Test_LISTED.Gui1.resources
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\Test_LISTED.View.Gui2.resources
+C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.Plugin.GuiAlarm.resources
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.Properties.Resources.resources
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csproj.GenerateResource.cache
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.AssemblyInfoInputs.cache

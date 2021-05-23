@@ -13,6 +13,7 @@ using System.Runtime.InteropServices;
 using Test_LISTED.Controller;
 using System.IO;
 using System.Collections.Generic;
+using LISTED.Plugin;
 
 //using Test_LISTED.Adapter;
 
@@ -212,6 +213,8 @@ namespace Test_LISTED
             pnlNav.Height = btnAlarm.Height;
             pnlNav.Top = btnAlarm.Top;
             btnAlarm.BackColor = Color.FromArgb(0, 64, 64);
+            Form myAlarmForm = new GuiAlarm();
+            myAlarmForm.ShowDialog();
         }
 
         private void btnCal_Click(object sender, EventArgs e)
