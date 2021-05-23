@@ -24,14 +24,13 @@ namespace Test_LISTED
 
         private static extern IntPtr CreateRoundRectRgn
     (
-      int nLeftRect,
-      int nTopRect,
-      int nRightRect,
-      int nBottomRect,
-      int nWidthEllipse,
-         int nHeightEllipse
-
-  );
+        int nLeftRect,
+        int nTopRect,
+        int nRightRect,
+        int nBottomRect,
+        int nWidthEllipse,
+        int nHeightEllipse
+    );
         public Gui1()
         {
             InitializeComponent();
@@ -102,7 +101,7 @@ namespace Test_LISTED
             return;
         }
 
-        private string FormalizeContentToString()
+        public string FormalizeContentToString()
         {
             /* Check if text boxes have content, if true take their content and add formalized string to myInput. */
 
@@ -196,11 +195,11 @@ namespace Test_LISTED
             pnlNav.Height = btnTodo.Height;
             pnlNav.Top = btnTodo.Top;
             btnTodo.BackColor = Color.FromArgb(0, 64, 64);
-            creatNewList();
+            createNewList();
 
         }
 
-        private void creatNewList()
+        public void createNewList()
         {
             TabPage tabNew = new TabPage();
             tabNew.Text = "New List";
@@ -305,7 +304,7 @@ namespace Test_LISTED
         }
 
 
-        private void DeleteContentFromAllTextboxes()
+        public void DeleteContentFromAllTextboxes()
         {
             /* delete contents from textboxes */
             this.richTextBox1.Text = "";
@@ -322,7 +321,7 @@ namespace Test_LISTED
             return;
         }
 
-        private void WriteCalendarNameFromDatabaseToTextBoxes(ArrayList arrayPart)
+        public void WriteCalendarNameFromDatabaseToTextBoxes(ArrayList arrayPart)
         {
             int n = 0;
 
@@ -354,7 +353,7 @@ namespace Test_LISTED
             return;
         }
 
-        private void WriteDateFromDatabaseToTextBoxes(ArrayList arrayPartDate)
+        public void WriteDateFromDatabaseToTextBoxes(ArrayList arrayPartDate)
         {
             int n = 0;
             foreach (Object obj in arrayPartDate)
@@ -385,7 +384,7 @@ namespace Test_LISTED
             return;
         }
 
-        private ArrayList SplitDataFromStorageName(string myInput)
+        public ArrayList SplitDataFromStorageName(string myInput)
         {
             /* create array list from input from datastorage */
 
@@ -399,7 +398,7 @@ namespace Test_LISTED
             return arrayPart;
         }
 
-        private ArrayList SplitDataFromStorageDate(string myInput)
+        public ArrayList SplitDataFromStorageDate(string myInput)
         {
             /* create array list from input from datastorage */
 

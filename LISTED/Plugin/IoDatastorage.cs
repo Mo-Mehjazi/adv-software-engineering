@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace Test_LISTED.Model
 {
-    class IoDatastorage
+    public class IoDatastorage
     {
         string string_Data = "";
 

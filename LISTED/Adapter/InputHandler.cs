@@ -39,65 +39,13 @@ namespace Test_LISTED.Controller
          */
         public string int_InputHandler_VerifyUserInput(String string_UserInput)
         {
-            //// TODO: Variable input data to be written.
-            ///* create data to be written into local file */
-            ////string username = "myName";
-            ////string[] list_x = new string[] { "list 1", "list 2" };
-            ////string[] list_1 = new string[] { "einkaufen", ",", "putzen", "\n" };
-            ////string[] list_2 = new string[] { "dekorieren", "\n" };
-            //string myStringTest = string_UserInput;
-
-            //System.Diagnostics.Debug.WriteLine("hier: " + myStringTest);
-
-            ///* write user name into myStringTest */
-            ////myStringTest = username;
-            //myStringTest += "\n";
-            //System.Diagnostics.Debug.WriteLine(myStringTest);
-
-            ///* write all user info into myStringTest */
-            //for (int i = 0; i < list_x.Length; i++)
-            //{
-            //    /* iterate all lists */
-            //    myStringTest += list_x[i];
-            //    myStringTest += ":";
-            //    myStringTest += "\t";
-            //    if (i == 0)
-            //    {
-            //        /* iterate first list */
-            //        for (int j = 0; j < list_1.Length; j++)
-            //        {
-            //            myStringTest += list_1[j];
-            //        }
-            //    }
-            //    if (i == 1)
-            //    {
-            //        /* iterate second list */
-            //        for (int j = 0; j < list_2.Length; j++)
-            //        {
-            //            myStringTest += list_2[j];
-            //        }
-            //    }
-            //}
-
             /* Write into data storage */
             mydatastorage.int_IoDatastorage_WriteDataToStorage(string_UserInput, Storage.s_PathTextfile); // "C:\\Users\\mfle\\Desktop\\myFile.txt");
 
-            /* TEST, temp: Read from written data storage. */
+            /* Read from written data storage. */
             string myTest = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
-            System.Diagnostics.Debug.WriteLine(myTest);
-            //Console.WriteLine(myTest);
             return myTest;
         }
-
-        //Get content from Database
-        //public string IoDataStorageContent()
-        //{
-        //    /* TEST, temp: Read from written data storage. */
-        //    string myTest = mydatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile);
-        //    System.Diagnostics.Debug.WriteLine(myTest);
-        //    //Console.WriteLine(myTest);
-        //    return myTest;
-        //}
 
         /*
          * Check string in database.

@@ -1,5 +1,6 @@
 ﻿using System;
 using Test_LISTED.Model;
+using System.IO;
 
 namespace Test_LISTED.Controller
 {
@@ -24,6 +25,14 @@ namespace Test_LISTED.Controller
             myIoDatastorage = new IoDatastorage();
         }
 
+        public interface iFoo
+        {
+            OutputHandler OutputHandler { get; set; }
+            string myInput { get; set; }
+            IoDatastorage IoDatastorage { get; set; }
+            File File { get; set; }
+        }
+
         /*
          * Receive data stream from database.
          *
@@ -37,7 +46,7 @@ namespace Test_LISTED.Controller
             /* Read from datastorage */
             string myTest = myIoDatastorage.string_IoDataStorage_ReadDataFromStorage(Storage.s_PathTextfile); //"C:\\Users\\mfle\\Desktop\\myFile.txt");
             //string myTest = myIoDatastorage.int_IoDatastorage_WriteDataToStorage(string_Content, Storage.s_PathTextfile);
-            System.Diagnostics.Debug.WriteLine("Ersatz: " + myTest);
+            //System.Diagnostics.Debug.WriteLine("Ersatz: " + myTest);
             return;
         }
 

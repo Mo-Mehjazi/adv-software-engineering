@@ -610,7 +610,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPageMain;
         private System.Windows.Forms.Panel panelLeft;
@@ -640,7 +640,7 @@
         private System.Windows.Forms.RichTextBox richTextBox9;
         private System.Windows.Forms.RichTextBox richTextBox8;
         private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.RichTextBox richTextBox6;
+        public System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.RichTextBox txtboxUpevent2;
         private System.Windows.Forms.RichTextBox txtboxUpevent1;
         private System.Windows.Forms.RichTextBox txtboxHlights2;

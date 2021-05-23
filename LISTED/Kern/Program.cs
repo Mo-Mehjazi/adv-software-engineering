@@ -8,16 +8,6 @@ using Test_LISTED.Controller;
 
 namespace Test_LISTED
 {
-    public class Testing
-    {
-        public int variableTest = 0;
-        public int TestForTesting(int a, int b, int c)
-        {
-            c = a + b;
-            return c;
-        }
-    }
-
     static class Program
     {
 

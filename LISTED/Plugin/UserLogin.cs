@@ -7,12 +7,6 @@ using System.Text.Json.Serialization;
 
 namespace Test_LISTED.Model
 {
-    public class Movie
-    {
-        public string Name { get; set; }
-        public int Year { get; set; }
-    }
-
     public class UserLogin
     {
         public string s_UserLogin = "Model\\UserLogin.txt";
