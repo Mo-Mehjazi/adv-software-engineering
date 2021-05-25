@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LISTED_Testing
 {
-    public class Storagez
+    public class Storage_Test
     {
         [Fact]
         public void StorageDate()

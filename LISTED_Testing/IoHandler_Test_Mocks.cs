@@ -9,7 +9,7 @@ using System.IO;
 
 namespace LISTED_Testing
 {
-    public class Mocksz
+    public class IoHandler_Test_Mocks
     {
         InputHandler myInputHandler = new InputHandler();
         [Fact]
