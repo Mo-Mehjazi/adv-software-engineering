@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<svg width="773" height="39" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <polygon points="4,35 4,4 769,4 769,35 4,35" stroke="#fffffe00" fill="none"/>
+ <polygon points="540,9 417,9 414,12 414,35 537,35 540,32 540,9" stroke="#90c4e4" fill="none"/>
+ <polyline points="537,12 414,12" stroke="#90c4e4" fill="none"/>
+ <polyline points="537,12 537,35" stroke="#90c4e4" fill="none"/>
+ <polyline points="537,12 540,9" stroke="#90c4e4" fill="none"/>
+ <text x="422" y="24" fill="#000000" font-family="Arial" font-size="12">LISTED/Plugins</text>
+ <polygon points="769,9 624,9 621,12 621,35 766,35 769,32 769,9" stroke="#90c4e4" fill="none"/>
+ <polyline points="766,12 621,12" stroke="#90c4e4" fill="none"/>
+ <polyline points="766,12 766,35" stroke="#90c4e4" fill="none"/>
+ <polyline points="766,12 769,9" stroke="#90c4e4" fill="none"/>
+ <text x="629" y="24" fill="#000000" font-family="Arial" font-size="12">LISTED/Properties</text>
+ <polyline points="540,22 547,22 555,22 562,22 570,22 578,22 585,22 593,22 601,22 608,22 616,22" stroke="#4e8cb9" fill="none"/>
+ <text x="577" y="15" fill="#000000" font-family="Arial" font-size="12">9</text>
+ <polygon points="616,20 621,22 616,24 616,20" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="324,9 196,9 193,12 193,35 321,35 324,32 324,9" stroke="#90c4e4" fill="none"/>
+ <polyline points="321,12 193,12" stroke="#90c4e4" fill="none"/>
+ <polyline points="321,12 321,35" stroke="#90c4e4" fill="none"/>
+ <polyline points="321,12 324,9" stroke="#90c4e4" fill="none"/>
+ <text x="202" y="24" fill="#000000" font-family="Arial" font-size="12">LISTED/Adapter</text>
+ <polyline points="324,22 332,22 341,22 349,22 358,22 367,22 375,22 384,22 392,22 401,22 409,22" stroke="#4e8cb9" fill="none"/>
+ <text x="360" y="15" fill="#000000" font-family="Arial" font-size="12">12</text>
+ <polygon points="409,20 414,22 409,24 409,20" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polygon points="112,9 7,9 4,12 4,35 109,35 112,32 112,9" stroke="#90c4e4" fill="none"/>
+ <polyline points="109,12 4,12" stroke="#90c4e4" fill="none"/>
+ <polyline points="109,12 109,35" stroke="#90c4e4" fill="none"/>
+ <polyline points="109,12 112,9" stroke="#90c4e4" fill="none"/>
+ <text x="12" y="24" fill="#000000" font-family="Arial" font-size="12">LISTED/Kern</text>
+ <polyline points="112,22 119,22 126,22 134,22 141,22 149,22 157,22 165,22 173,22 180,22 188,22" stroke="#4e8cb9" fill="none"/>
+ <text x="149" y="15" fill="#000000" font-family="Arial" font-size="12">2</text>
+ <polygon points="188,20 193,22 188,24 188,20" stroke="#4e8cb9" fill="#4e8cb9"/>
+</svg>
