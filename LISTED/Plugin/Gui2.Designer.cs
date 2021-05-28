@@ -1,4 +1,4 @@
-﻿namespace Test_LISTED.View
+﻿namespace LISTED.Plugin
 {
     partial class Gui2
     {

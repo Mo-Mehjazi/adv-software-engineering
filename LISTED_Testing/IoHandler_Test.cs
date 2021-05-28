@@ -1,6 +1,8 @@
 using System;
 using Xunit;
-using Test_LISTED.Controller;
+using LISTED.Adapter;
+using LISTED.Plugin;
+using LISTED.Kern;
 
 namespace LISTED_Testing
 {

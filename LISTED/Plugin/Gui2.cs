@@ -6,12 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Test_LISTED.Model;
-using Test_LISTED.View;
 using System.Runtime.InteropServices;
-using Test_LISTED.Controller;
+using LISTED.Adapter;
+using LISTED.Plugin;
+using LISTED.Kern;
 
-namespace Test_LISTED.View
+
+namespace LISTED.Plugin
 {
     public partial class Gui2 : Form
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Test_LISTED.Kern
+namespace LISTED.Adapter
 {
     /*
      * Manage order and existence from tabs that are visible on the GUI.

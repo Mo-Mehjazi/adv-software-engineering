@@ -4,21 +4,15 @@ using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Test_LISTED.Model;
-using Test_LISTED.View;
 using System.Runtime.InteropServices;
-using Test_LISTED.Controller;
 using System.IO;
-using System.Collections.Generic;
+using LISTED.Adapter;
 using LISTED.Plugin;
-using Test_LISTED.Kern;
+using LISTED.Kern;
 
-//using Test_LISTED.Adapter;
 
-namespace Test_LISTED
+namespace LISTED.Plugin
 {
     public partial class Gui1 : Form
     {

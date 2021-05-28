@@ -1,4 +1,4 @@
-﻿namespace Test_LISTED
+﻿namespace LISTED.Plugin
 {
     partial class Gui1
     {

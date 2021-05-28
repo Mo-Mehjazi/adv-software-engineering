@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
-using Test_LISTED.Model;
+using LISTED.Plugin;
 
-namespace Test_LISTED.Controller
+namespace LISTED.Adapter
 {
     public class ControlGui1
     {
@@ -9,6 +9,16 @@ namespace Test_LISTED.Controller
         {
             Init AppInit = new Init();
             Application.Run(Storage.myGui1);
+        }
+    }
+
+    class Init
+    {
+        public Init()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Storage myStorage = new Storage();
         }
     }
 }
