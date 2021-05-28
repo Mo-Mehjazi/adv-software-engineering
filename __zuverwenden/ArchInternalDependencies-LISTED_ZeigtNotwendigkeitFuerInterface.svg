@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<svg width="1285" height="238" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <polygon points="4,234 4,4 1281,4 1281,234 4,234" stroke="#fffffe00" fill="none"/>
+ <polygon points="24,188 29,188 43,188 64,188 89,188 117,188 144,188 169,188 190,188 204,188 209,188 211,188 213,187 214,187 216,186 217,184 219,183 220,181 220,180 221,178 221,176 221,174 221,169 221,162 221,153 221,144 221,135 221,126 221,119 221,114 221,112 221,110 220,108 220,107 219,105 217,104 216,102 214,101 213,101 211,100 209,100 204,100 190,100 169,100 144,100 117,100 89,100 64,100 43,100 29,100 24,100 22,100 20,101 19,101 17,102 16,104 14,105 13,107 13,108 12,110 12,112 12,114 12,119 12,126 12,135 12,144 12,153 12,162 12,169 12,174 12,176 12,178 13,180 13,181 14,183 16,184 17,186 19,187 20,187 22,188 24,188" stroke="#afd870" fill="none"/>
+ <text x="71" y="115" fill="#afd870" font-family="Arial" font-size="12">LISTED/Kern</text>
+ <polygon points="213,134 23,134 20,137 20,160 210,160 213,157 213,134" stroke="#90c4e4" fill="none"/>
+ <polyline points="210,137 20,137" stroke="#90c4e4" fill="none"/>
+ <polyline points="210,137 210,160" stroke="#90c4e4" fill="none"/>
+ <polyline points="210,137 213,134" stroke="#90c4e4" fill="none"/>
+ <text x="29" y="149" fill="#000000" font-family="Arial" font-size="12">LISTED/Kern/Program.cs</text>
+ <polygon points="632,226 639,226 656,226 683,226 714,226 749,226 784,226 815,226 842,226 859,226 866,226 868,226 870,225 871,225 873,224 874,222 876,221 877,219 877,218 878,216 878,214 878,210 878,198 878,181 878,160 878,138 878,116 878,95 878,78 878,66 878,62 878,60 877,58 877,57 876,55 874,54 873,52 871,51 870,51 868,50 866,50 859,50 842,50 815,50 784,50 749,50 714,50 683,50 656,50 639,50 632,50 630,50 628,51 627,51 625,52 624,54 622,55 621,57 621,58 620,60 620,62 620,66 620,78 620,95 620,116 620,138 620,160 620,181 620,198 620,210 620,214 620,216 621,218 621,219 622,221 624,222 625,224 627,225 628,225 630,226 632,226" stroke="#afd870" fill="none"/>
+ <text x="698" y="65" fill="#afd870" font-family="Arial" font-size="12">LISTED/Plugin</text>
+ <polygon points="848,128 653,128 650,131 650,154 845,154 848,151 848,128" stroke="#90c4e4" fill="none"/>
+ <polyline points="845,131 650,131" stroke="#90c4e4" fill="none"/>
+ <polyline points="845,131 845,154" stroke="#90c4e4" fill="none"/>
+ <polyline points="845,131 848,128" stroke="#90c4e4" fill="none"/>
+ <text x="658" y="143" fill="#000000" font-family="Arial" font-size="12">LISTED/Plugin/Storage.cs</text>
+ <polygon points="870,84 631,84 629,87 629,110 867,110 870,107 870,84" stroke="#90c4e4" fill="none"/>
+ <polyline points="867,87 629,87" stroke="#90c4e4" fill="none"/>
+ <polyline points="867,87 867,110" stroke="#90c4e4" fill="none"/>
+ <polyline points="867,87 870,84" stroke="#90c4e4" fill="none"/>
+ <text x="637" y="99" fill="#000000" font-family="Arial" font-size="12">LISTED/Plugin/IoDatastorage.cs</text>
+ <polygon points="870,172 631,172 628,175 628,198 867,198 870,195 870,172" stroke="#90c4e4" fill="none"/>
+ <polyline points="867,175 628,175" stroke="#90c4e4" fill="none"/>
+ <polyline points="867,175 867,198" stroke="#90c4e4" fill="none"/>
+ <polyline points="867,175 870,172" stroke="#90c4e4" fill="none"/>
+ <text x="636" y="187" fill="#000000" font-family="Arial" font-size="12">LISTED/Plugin/Gui1.Designer.cs</text>
+ <polygon points="955,226 964,226 987,226 1021,226 1063,226 1108,226 1153,226 1195,226 1229,226 1252,226 1261,226 1263,226 1265,225 1266,225 1268,224 1269,222 1271,221 1272,219 1272,218 1273,216 1273,214 1273,212 1273,207 1273,200 1273,191 1273,182 1273,173 1273,164 1273,157 1273,152 1273,150 1273,148 1272,146 1272,145 1271,143 1269,142 1268,140 1266,139 1265,139 1263,138 1261,138 1252,138 1229,138 1195,138 1153,138 1108,138 1063,138 1021,138 987,138 964,138 955,138 953,138 951,139 950,139 948,140 947,142 945,143 944,145 944,146 943,148 943,150 943,152 943,157 943,164 943,173 943,182 943,191 943,200 943,207 943,212 943,214 943,216 944,218 944,219 945,221 947,222 948,224 950,225 951,225 953,226 955,226" stroke="#afd870" fill="none"/>
+ <text x="1042" y="153" fill="#afd870" font-family="Arial" font-size="12">LISTED/Properties</text>
+ <polygon points="1265,172 954,172 951,175 951,198 1262,198 1265,195 1265,172" stroke="#90c4e4" fill="none"/>
+ <polyline points="1262,175 951,175" stroke="#90c4e4" fill="none"/>
+ <polyline points="1262,175 1262,198" stroke="#90c4e4" fill="none"/>
+ <polyline points="1262,175 1265,172" stroke="#90c4e4" fill="none"/>
+ <text x="959" y="187" fill="#000000" font-family="Arial" font-size="12">LISTED/Properties/Resources.Designer.cs</text>
+ <polygon points="298,188 305,188 323,188 351,188 384,188 421,188 457,188 490,188 518,188 536,188 543,188 545,188 547,187 548,187 550,186 551,184 553,183 554,181 554,180 555,178 555,176 555,172 555,160 555,143 555,122 555,100 555,78 555,57 555,40 555,28 555,24 555,22 554,20 554,19 553,17 551,16 550,14 548,13 547,13 545,12 543,12 536,12 518,12 490,12 457,12 421,12 384,12 351,12 323,12 305,12 298,12 296,12 294,13 293,13 291,14 290,16 288,17 287,19 287,20 286,22 286,24 286,28 286,40 286,57 286,78 286,100 286,122 286,143 286,160 286,172 286,176 286,178 287,180 287,181 288,183 290,184 291,186 293,187 294,187 296,188 298,188" stroke="#afd870" fill="none"/>
+ <text x="364" y="27" fill="#afd870" font-family="Arial" font-size="12">LISTED/Adapter</text>
+ <polygon points="540,134 304,134 302,137 302,160 537,160 540,157 540,134" stroke="#90c4e4" fill="none"/>
+ <polyline points="537,137 302,137" stroke="#90c4e4" fill="none"/>
+ <polyline points="537,137 537,160" stroke="#90c4e4" fill="none"/>
+ <polyline points="537,137 540,134" stroke="#90c4e4" fill="none"/>
+ <text x="310" y="149" fill="#000000" font-family="Arial" font-size="12">LISTED/Adapter/ControlGui1.cs</text>
+ <polygon points="541,90 303,90 301,93 301,116 538,116 541,113 541,90" stroke="#90c4e4" fill="none"/>
+ <polyline points="538,93 301,93" stroke="#90c4e4" fill="none"/>
+ <polyline points="538,93 538,116" stroke="#90c4e4" fill="none"/>
+ <polyline points="538,93 541,90" stroke="#90c4e4" fill="none"/>
+ <text x="309" y="105" fill="#000000" font-family="Arial" font-size="12">LISTED/Adapter/InputHandler.cs</text>
+ <polygon points="547,46 297,46 294,49 294,72 544,72 547,69 547,46" stroke="#90c4e4" fill="none"/>
+ <polyline points="544,49 294,49" stroke="#90c4e4" fill="none"/>
+ <polyline points="544,49 544,72" stroke="#90c4e4" fill="none"/>
+ <polyline points="544,49 547,46" stroke="#90c4e4" fill="none"/>
+ <text x="303" y="61" fill="#000000" font-family="Arial" font-size="12">LISTED/Adapter/OutputHandler.cs</text>
+ <polyline points="870,185 878,185 885,185 893,185 900,185 908,185 915,185 923,185 931,185 938,185 946,185" stroke="#4e8cb9" fill="none"/>
+ <text x="907" y="178" fill="#000000" font-family="Arial" font-size="12">9</text>
+ <polygon points="946,183 951,185 946,187 946,183" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polyline points="512,160 516,161 521,162 525,163 530,164 534,165 538,166 542,167 547,168 551,169 555,170 560,172 564,174 567,176 571,177 574,179 577,181 580,182 584,182 588,182 592,181 596,180 599,178 602,176 604,174 606,172 608,170 610,168 613,166 616,165 620,163 622,162 625,161 627,160 630,159 632,159 635,158 637,157 640,156 642,156 645,155" stroke="#4e8cb9" fill="none"/>
+ <text x="584" y="174" fill="#000000" font-family="Arial" font-size="12">3</text>
+ <polygon points="644,153 650,154 645,157 644,153" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polyline points="532,116 537,117 542,117 547,118 552,118 558,119 563,120 568,120 573,121 578,121 583,122 589,123 595,123 601,124 607,125 614,126 620,126 626,127 632,128 639,128 645,129" stroke="#4e8cb9" fill="none"/>
+ <text x="584" y="115" fill="#000000" font-family="Arial" font-size="12">2</text>
+ <polygon points="645,127 650,130 645,131 645,127" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polyline points="541,101 549,101 557,101 566,100 574,100 582,100 590,100 598,100 607,99 615,99 623,99" stroke="#4e8cb9" fill="none"/>
+ <text x="584" y="93" fill="#000000" font-family="Arial" font-size="12">2</text>
+ <polygon points="623,98 628,99 623,101 623,98" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polyline points="547,63 552,64 556,66 561,67 566,69 570,71 575,72 579,74 583,76 588,79 592,81 597,84 600,88 603,92 604,96 606,100 608,104 609,108 612,112 615,116 620,119 622,120 625,122 627,123 630,125 632,126 635,127 637,128 640,129 642,130 645,131" stroke="#4e8cb9" fill="none"/>
+ <text x="584" y="70" fill="#000000" font-family="Arial" font-size="12">1</text>
+ <polygon points="646,129 650,132 644,132 646,129" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polyline points="471,46 482,44 493,42 505,40 517,39 529,38 542,37 555,37 567,37 580,38 592,40 606,43 619,46 633,50 646,54 660,59 672,63 684,68 696,73 706,78 716,82" stroke="#4e8cb9" fill="none"/>
+ <text x="584" y="33" fill="#000000" font-family="Arial" font-size="12">4</text>
+ <polygon points="717,80 721,84 716,83 717,80" stroke="#4e8cb9" fill="#4e8cb9"/>
+ <polyline points="213,147 221,147 229,147 237,147 246,147 254,147 263,147 271,147 279,147 288,147 296,147" stroke="#4e8cb9" fill="none"/>
+ <text x="250" y="140" fill="#000000" font-family="Arial" font-size="12">2</text>
+ <polygon points="297,145 302,147 297,149 297,145" stroke="#4e8cb9" fill="#4e8cb9"/>
+</svg>
