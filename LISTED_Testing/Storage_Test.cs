@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Windows.Forms;
-using Test_LISTED.Controller;
-using Test_LISTED.Model;
+using Test_LISTED.Adapter;
+using Test_LISTED.Plugins;
 using Xunit;
 
 namespace LISTED_Testing

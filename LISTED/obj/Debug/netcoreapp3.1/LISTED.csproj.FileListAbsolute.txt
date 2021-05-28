@@ -36,3 +36,5 @@ C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcor
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.pdb
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.genruntimeconfig.cache
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csprojAssemblyReference.cache
+C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.csprojAssemblyReference.cache
+C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED\obj\Debug\netcoreapp3.1\LISTED.Plugin.GuiAlarm.resources

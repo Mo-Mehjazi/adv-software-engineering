@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Test_LISTED.Model;
+using Test_LISTED.Plugins;
 
-namespace Test_LISTED.Controller
+namespace Test_LISTED.Adapter
 {
     /*
      * Verify user input data and merge info to format of database.
