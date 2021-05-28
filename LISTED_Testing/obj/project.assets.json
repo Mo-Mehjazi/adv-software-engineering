@@ -5988,19 +5988,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mfle\\.nuget\\packages\\": {}
+    "C:\\Users\\M7_Mj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED_Testing\\LISTED_Testing.csproj",
+      "projectUniqueName": "C:\\Users\\M7_Mj\\Documents\\GitHub\\adv-software-engineering\\LISTED_Testing\\LISTED_Testing.csproj",
       "projectName": "LISTED_Testing",
-      "projectPath": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED_Testing\\LISTED_Testing.csproj",
-      "packagesPath": "C:\\Users\\mfle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED_Testing\\obj\\",
+      "projectPath": "C:\\Users\\M7_Mj\\Documents\\GitHub\\adv-software-engineering\\LISTED_Testing\\LISTED_Testing.csproj",
+      "packagesPath": "C:\\Users\\M7_Mj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\M7_Mj\\Documents\\GitHub\\adv-software-engineering\\LISTED_Testing\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mfle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\M7_Mj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6014,8 +6014,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj": {
-              "projectPath": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj"
+            "C:\\Users\\M7_Mj\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj": {
+              "projectPath": "C:\\Users\\M7_Mj\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj"
             }
           }
         }
@@ -6068,12 +6068,9 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,7 +1,7 @@
-using System.Windows.Forms;
-using Test_LISTED.Plugins;
+﻿using System.Windows.Forms;
+using Test_LISTED.Model;
 
-namespace Test_LISTED.Adapter
+namespace Test_LISTED.Controller
 {
     public class ControlGui1
     {
@@ -10,15 +10,5 @@ namespace Test_LISTED.Adapter
             Init AppInit = new Init();
             Application.Run(Storage.myGui1);
         }
-    }
-    
-    class Init
-    {
-      public Init()
-      {
-        Application.EnableVisualStyles();
-        Application.SetCompatibleTextRenderingDefault(false);
-        Storage myStorage = new Storage();
-      }
     }
 }

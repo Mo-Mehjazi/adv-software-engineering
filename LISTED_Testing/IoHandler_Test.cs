@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using Test_LISTED.Adapter;
+using Test_LISTED.Controller;
 
 namespace LISTED_Testing
 {

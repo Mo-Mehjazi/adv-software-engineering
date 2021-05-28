@@ -103,9 +103,3 @@ C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debu
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.dll
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.pdb
 C:\Users\M7_Mj\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.genruntimeconfig.cache
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.csprojAssemblyReference.cache
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.AssemblyInfoInputs.cache
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.AssemblyInfo.cs
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.csproj.CoreCompileInputs.cache
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.dll
-C:\Users\mfle\Documents\GitHub\adv-software-engineering\LISTED_Testing\obj\Debug\netcoreapp3.1\LISTED_Testing.pdb

@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Test_LISTED.Presentation_Model
+namespace Test_LISTED.Model
 {
-    class ListView
+    class Calendar
+    {
+
+    }
+
+    class DateReminder
     {
 
     }

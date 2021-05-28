@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gF7kUv7uiXWCXmpzSkokD/AsUU+i30GUT8BqJCsYVpYopqQ094eCUXP3D/JVMNvewPaRJFjCMwYTl5eXqlKGVg==",
+  "dgSpecHash": "7/JpOLcbdKZv04M3PTi15roectKryoyLbi9p2oWaTb71PfQzQAoXmhACh8dyu1hBeorsCaKyte5V31E2idgyzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mfle\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj",
+  "projectFilePath": "C:\\Users\\M7_Mj\\Documents\\GitHub\\adv-software-engineering\\LISTED\\LISTED.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mfle\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\M7_Mj\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

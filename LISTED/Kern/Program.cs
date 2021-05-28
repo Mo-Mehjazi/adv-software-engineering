@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Security;
 using System.Windows.Forms;
-using Test_LISTED.Plugins;
-using Test_LISTED.Adapter;
+using Test_LISTED.Model;
+using Test_LISTED.Controller;
 
-namespace Test_LISTED.Kern
+namespace Test_LISTED
 {
     static class Program
     {

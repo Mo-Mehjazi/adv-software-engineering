@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Test_LISTED.Plugins
+namespace Test_LISTED.Model
 {
     public class UserLogin
     {
