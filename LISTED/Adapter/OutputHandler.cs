@@ -1,8 +1,8 @@
 ﻿using System;
-using Test_LISTED.Model;
+using Test_LISTED.Plugins;
 using System.IO;
 
-namespace Test_LISTED.Controller
+namespace Test_LISTED.Adapter
 {
     /*
      * Verify output from database and split from database format to GUI elements format.

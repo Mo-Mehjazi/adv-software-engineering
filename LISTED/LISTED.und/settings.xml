@@ -13,11 +13,16 @@
     <dir
       name=".">
       <dir
+        name="..">
+        <dir
+          name="LISTED_Testing"/>
+      </dir>
+      <dir
         name="Adapter"/>
       <dir
         name="Kern"/>
       <dir
-        name="Plugin"/>
+        name="Plugins"/>
       <dir
         name="Properties"/>
     </dir>
