@@ -14,6 +14,7 @@ using Test_LISTED.Controller;
 using System.IO;
 using System.Collections.Generic;
 using LISTED.Plugin;
+using Test_LISTED.Kern;
 
 //using Test_LISTED.Adapter;
 
@@ -41,18 +42,7 @@ namespace Test_LISTED
             pnlNav.Left = btnHome.Left;
             btnHome.BackColor = Color.FromArgb(0, 80, 80);
             load_Database();
-            //GuiReaction myGuiReaction = new GuiReaction();
-            //GetGuiReaction myGetGuiReaction = new GetGuiReaction();
-            //myGetGuiReaction.Subscribe(myGuiReaction);
         }
-
-        //private void richTextBox1_TextChanged(object sender, EventArgs e)
-        //{
-        //    /* Part of Observer Pattern on TextBoxLeave */
-        //    btn_Save_Click(sender, e);
-        //
-        //    return;
-        //}
 
         private void WriteContentIntoTextboxes()
         {
@@ -202,10 +192,13 @@ namespace Test_LISTED
 
         public void createNewList()
         {
+
             TabPage tabNew = new TabPage();
-            tabNew.Text = "New List";
+            TabsControl myTabsControl = new TabsControl();
+            myTabsControl.v_TabControl_CreateNewTab(tabNew, "List" + Storage.listNum);
             tabNew.ImageIndex = this.tabControlMain.TabPages.Count + 1;
             this.tabControlMain.TabPages.Add(tabNew);
+            Storage.listNum++;
         }
 
         private void btnAlarm_Click(object sender, EventArgs e)
@@ -235,9 +228,8 @@ namespace Test_LISTED
             {
                 this.btnLogOut.Text = "Log out!";
 
-                string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-
-                string myName = username.Substring(username.IndexOf("\\") + 1);
+                UserLogin myUserLogin = new UserLogin();
+                string myName = myUserLogin.GetUserByWindowsId().Substring(myUserLogin.GetUserByWindowsId().IndexOf("\\") + 1);
                 this.userLabel.Text = myName;
 
             }

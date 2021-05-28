@@ -7,11 +7,7 @@ namespace Test_LISTED.Controller
     {
         public ControlGui1()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Gui1());
-            Storage myStorage = new Storage();
-
+            Init AppInit = new Init();
             Application.Run(Storage.myGui1);
         }
     }

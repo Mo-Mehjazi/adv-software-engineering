@@ -12,7 +12,7 @@ namespace Test_LISTED.Model
         private static int[] ai_TabsList = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
         public LinkedList<int> ll_Tabs = new LinkedList<int>(ai_TabsList);
-
+        public static int  listNum = 0;
         public static DateTime myLocalDate;
         public static string myLocalName;
         public static string myLocalDescription;

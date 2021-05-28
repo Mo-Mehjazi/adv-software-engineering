@@ -20,9 +20,11 @@ namespace Test_LISTED.Model
         [JsonPropertyName("userId")]
         public string s_UserId { get; set; } /* set user to json file */
 
-        public void GetUserById()
+        public string GetUserByWindowsId()
         {
-            /* get user from list */
+            /* get username from Windows Login */
+            string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            return username;
         }
 
         public void DeleteUserById()
