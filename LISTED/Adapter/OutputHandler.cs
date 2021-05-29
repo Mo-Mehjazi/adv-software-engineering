@@ -49,17 +49,5 @@ namespace LISTED.Adapter
             //System.Diagnostics.Debug.WriteLine("Ersatz: " + myTest);
             return;
         }
-
-        /*
-         * Split the data stream.
-         *
-         * Input:  Data stream from database.
-         * Output: Content is split on target formats of the GUI.
-         */
-        public void v_OutputHandler_SplitDataStream(String string_Content)
-        {
-            /**/
-            return;
-        }
     }
 }

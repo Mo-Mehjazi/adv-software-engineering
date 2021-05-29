@@ -26,20 +26,5 @@ namespace LISTED.Plugin
             string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             return username;
         }
-
-        public void DeleteUserById()
-        {
-            /* delete user from list */
-        }
-
-        public void ChangeUserDataById()
-        {
-            /* change user data from list */
-        }
-
-        public void SetUserActiveById()
-        {
-            /* set active user */
-        }
     }
 }
