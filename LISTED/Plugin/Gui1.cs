@@ -1,15 +1,9 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
-using LISTED.Adapter;
-using LISTED.Plugin;
-using LISTED.Kern;
 
 
 namespace LISTED.Plugin
@@ -641,16 +635,6 @@ namespace LISTED.Plugin
             }
 
             return;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //String myString = "Das ist ein Text.";
-            //InputHandler myInputHandler = new InputHandler();
-            //string string_MyResult1 = myInputHandler.int_InputHandler_VerifyUserInput(myString);
-            //Console.WriteLine(string_MyResult1);
-            //Console.ReadLine();
-
         }
     }
 }
